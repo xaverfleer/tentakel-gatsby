@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-size: 2rem;
+}
+
+html {
+  font-size: 8px;
+}
+
+.article-preview {
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+}
+
+.article-preview__author-and-date {
+  color: #ccc;
+  padding-bottom: 0.5rem;
+  font-size: 1.23607rem;
+}
+
+.article-preview__category {
+  border: 1px solid black;
+  background-color: #fff;
+  left: 0;
+  margin-right: auto;
+  padding: 1rem 3.5rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.article-preview__img {
+  margin-top: 1em;
+  max-width: 100%;
+}
+
+.article-preview__teaser {
+  background-color: #fff;
+  border: 1px solid black;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  transform: translateY(-3em);
+}
+
+.article-preview__title {
+  margin: 0 0 0.3em;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+}
