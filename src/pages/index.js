@@ -8,18 +8,18 @@ const IndexPage = () => {
       <title>Tentakel | Online Magazin</title>
       <div className="wrapper">
         <header></header>
-        <main style={{ textAlign: "center" }}>
+        <main>
           <aside></aside>
-          <div className="article-preview--main">
-            <div className="article-preview__category--main">Reportage</div>
+          <div className="article-preview">
+            <div className="article-preview__category">Reportage</div>
             <img
-              className="article-preview__img--main"
+              className="article-preview__img"
               src={imgPraesidentMujica}
             ></img>
-            <div className="article-preview__teaser--main">
-              <div className="article-preview__title">
+            <div className="article-preview__teaser">
+              <h2 className="article-preview__title">
                 Präsident Mujica lebt mit wenig Geld
-              </div>
+              </h2>
               <div className="article-preview__author-and-date">
                 18. Juni 2021, Corlos Gabetta
               </div>
@@ -31,7 +31,6 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
-          <div className="articles"></div>
         </main>
         <footer></footer>
       </div>
