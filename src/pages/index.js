@@ -3,10 +3,12 @@ import "../style.css";
 
 import imgBlume from "../images/blume.png";
 import imgGurten from "../images/eindruecke-00.png";
+import imgKatze from "../images/katze.png";
 import imgLoslassenDranbleiben from "../images/loslassen-dranbleiben.png";
 import imgMalerei from "../images/malerei.png";
 import imgPraesidentMujica from "../images/praesident-mujica.png";
 import imgPlastik from "../images/plastik.png";
+import imgSchnauzeVoll from "../images/schnauze-voll.png";
 
 import ArticlePreview from "../components/ArticlePreview";
 import ArticlePreviewSmall from "../components/ArticlePreviewSmall";
@@ -68,6 +70,27 @@ const IndexPage = () => {
                 teaserText="Harry geht mit vielen Kindern OPlastik einsammeln. Danach sind die Strände wieder sauber. Es ist eine mühselige Arbeit, mit Sitt. Viele Inseln ziehen nach."
                 title="Wieso Plastik am Strand mein Leben vermiest"
               />
+            </div>
+            <div className="preview-column">
+              <ArticlePreviewSmall
+                category="Die Serie – Frauenfeindlichkeit im System #1"
+                title="«Hab Schnautze voll»"
+                pic={imgSchnauzeVoll}
+                authorAndDate="16. Juni 2021, Regine Häckel"
+                teaserText="Die Künstlerin aus Brugg macht sich viele Gedanken über das Leben nach der Ausstellung."
+              />
+              <ArticlePreviewSmall
+                category="Gedacht"
+                title="«Bifurkation»"
+                quoteAuthor="16. März 2021, Redaktion"
+              />
+              <ArticlePreviewSmall
+                category="Das Interview"
+                title="«Ich will mein leben mit Malerei gestalten»"
+                pic={imgKatze}
+                authorAndDate="16. Juni 2021, Regine Häckel"
+                teaserText="Die Künstlerin aus Brugg macht sich viele Gedanken über das Leben nach der Ausstellung."
+              ></ArticlePreviewSmall>
             </div>
           </div>
         </main>
