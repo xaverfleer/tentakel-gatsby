@@ -70,6 +70,15 @@ html {
   text-align: end;
 }
 
+.layout__link {
+  display: block;
+  margin: 0 auto;
+}
+
+.layout__logo {
+  max-width: 100%;
+}
+
 .preview-column {
   margin: 0 1em;
   max-width: 30%;
