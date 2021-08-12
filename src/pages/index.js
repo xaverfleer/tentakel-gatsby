@@ -1,5 +1,6 @@
 import * as React from "react";
 import "../style.css";
+import imgLoslassenDranbleiben from "../images/loslassen-dranbleiben.png";
 import imgPraesidentMujica from "../images/praesident-mujica.png";
 import imgPlastik from "../images/plastik.png";
 
@@ -29,6 +30,18 @@ const IndexPage = () => {
                 pic={imgPlastik}
                 teaserText="Harry geht mit vielen Kindern OPlastik einsammeln. Danach sind die Strände wieder sauber. Es ist eine mühselige Arbeit, mit Sitt. Viele Inseln ziehen nach."
                 title="Wieso Plastik am Strand mein Leben vermiest"
+              />
+              <ArticlePreviewSmall
+                authorAndDate="16. Juni 2021, Rolf Brügger"
+                category="5 Fragen an..."
+                pic={imgLoslassenDranbleiben}
+                teaserText="Die Künstlerin aus Brugg macht sich viele Gedanken über das Leben nach der Ausstellung."
+                title="«Loslassen heisst dranbleiben»"
+              />
+              <ArticlePreviewSmall
+                category="Zitiert"
+                title="«Meine Meinung steht fest, irritieren Sie mich nicht mit Tatsachen.»"
+                quoteAuthor="Konrad Adenauer (1867 – 1967)"
               />
             </div>
           </div>

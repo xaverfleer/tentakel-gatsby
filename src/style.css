@@ -19,6 +19,7 @@ html {
 .article-preview--small {
   border: 1px solid #000;
   padding: 1em;
+  margin-bottom: 1.5em;
 }
 
 .article-preview__author-and-date {
