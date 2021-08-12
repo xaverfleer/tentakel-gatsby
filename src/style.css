@@ -49,6 +49,10 @@ html {
   max-width: 100%;
 }
 
+.article-preview__img-description {
+  text-align: end;
+}
+
 .article-preview__teaser {
   background-color: #fff;
   border: 1px solid black;
@@ -62,6 +66,10 @@ html {
   margin: 0 0 0.3em;
 }
 
+.article-preview__quote-author {
+  text-align: end;
+}
+
 .preview-column {
   margin: 0 1em;
   max-width: 30%;
@@ -73,6 +81,10 @@ html {
 
 .preview-column:last-of-type {
   margin-right: 0;
+}
+
+.preview-columns {
+  display: flex;
 }
 
 .wrapper {

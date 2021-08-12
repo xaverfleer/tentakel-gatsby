@@ -1,6 +1,10 @@
 import * as React from "react";
 import "../style.css";
+
+import imgBlume from "../images/blume.png";
+import imgGurten from "../images/eindruecke-00.png";
 import imgLoslassenDranbleiben from "../images/loslassen-dranbleiben.png";
+import imgMalerei from "../images/malerei.png";
 import imgPraesidentMujica from "../images/praesident-mujica.png";
 import imgPlastik from "../images/plastik.png";
 
@@ -22,7 +26,7 @@ const IndexPage = () => {
             teaserText="In einem Interview in Uruguay erz'hlt der abgehende Präsident, wieso er nicht im Präsidentenpalast leben will. Und wieso er keinen Groll auf seine ehemaligen Folterer hat und nur Sinn und Leben sieht, ohne Hass."
             title="Präsident Mujica lebt mit wenig Geld"
           />
-          <div className="previewColumns">
+          <div className="preview-columns">
             <div class="preview-column">
               <ArticlePreviewSmall
                 authorAndDate="7. Juli 2021, Camilla Landbö"
@@ -42,6 +46,27 @@ const IndexPage = () => {
                 category="Zitiert"
                 title="«Meine Meinung steht fest, irritieren Sie mich nicht mit Tatsachen.»"
                 quoteAuthor="Konrad Adenauer (1867 – 1967)"
+              />
+            </div>
+            <div className="preview-column">
+              <ArticlePreviewSmall
+                category="Das Interview"
+                title="«Ich will mein leben mit Malerei gestalten»"
+                pic={imgMalerei}
+                authorAndDate="16. Juni 2021, Regine Häckel"
+                teaserText="Die Künstlerin aus Brugg macht sich viele Gedanken über das Leben nach der Ausstellung."
+              ></ArticlePreviewSmall>
+              <ArticlePreviewSmall
+                category="Eindrücke"
+                pic={imgGurten}
+                imgDescription="Gurten, Januar 2021"
+              ></ArticlePreviewSmall>
+              <ArticlePreviewSmall
+                authorAndDate="7. Juli 2021, Camilla Landbö"
+                category="Aus dem Leben eines Tintenfisches #1"
+                pic={imgBlume}
+                teaserText="Harry geht mit vielen Kindern OPlastik einsammeln. Danach sind die Strände wieder sauber. Es ist eine mühselige Arbeit, mit Sitt. Viele Inseln ziehen nach."
+                title="Wieso Plastik am Strand mein Leben vermiest"
               />
             </div>
           </div>
