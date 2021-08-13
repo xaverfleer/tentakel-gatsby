@@ -4,7 +4,7 @@ import header from "../images/header-2021-07-30.jpg";
 
 const Layout = ({ children }) => (
   <div className="wrapper">
-    <header>
+    <header className="header">
       <a className="layout__link" href="/">
         <img src={header} className="layout__logo"></img>
       </a>
