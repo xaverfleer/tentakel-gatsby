@@ -3,8 +3,6 @@ import { graphql } from "gatsby";
 
 import "../style.css";
 
-import imgKatze from "../images/katze.png";
-import imgSchnauzeVoll from "../images/schnauze-voll.png";
 import imgSidebar from "../images/sidebar-screenshot.png";
 
 import ArticlePreview from "../components/ArticlePreview";
@@ -31,7 +29,7 @@ const IndexPage = ({ data }) => {
             />
           ))}
           <div className="preview-columns">
-            {["Spalte 1", "Spalte 2"].map((columnName) => (
+            {["Spalte 1", "Spalte 2", "Spalte 3"].map((columnName) => (
               <div className="preview-column">
                 {allTeasers
                   .filter((t) => t.show === columnName)
@@ -48,27 +46,6 @@ const IndexPage = ({ data }) => {
                   ))}
               </div>
             ))}
-            <div className="preview-column">
-              <ArticlePreviewSmall
-                category="Die Serie – Frauenfeindlichkeit im System #1"
-                title="«Hab Schnautze voll»"
-                pic={imgSchnauzeVoll}
-                authorAndDate="16. Juni 2021, Regine Häckel"
-                teaserText="Die Künstlerin aus Brugg macht sich viele Gedanken über das Leben nach der Ausstellung."
-              />
-              <ArticlePreviewSmall
-                category="Gedacht"
-                title="«Bifurkation»"
-                quoteAuthor="16. März 2021, Redaktion"
-              />
-              <ArticlePreviewSmall
-                category="Das Interview"
-                title="«Ich will mein leben mit Malerei gestalten»"
-                pic={imgKatze}
-                authorAndDate="16. Juni 2021, Regine Häckel"
-                teaserText="Die Künstlerin aus Brugg macht sich viele Gedanken über das Leben nach der Ausstellung."
-              ></ArticlePreviewSmall>
-            </div>
           </div>
         </main>
         <aside className="sidebar">
