@@ -6,7 +6,11 @@ const Layout = ({ children }) => (
   <div className="wrapper">
     <header className="header">
       <a className="layout__link" href="/">
-        <img src={header} className="layout__logo"></img>
+        <img
+          src={header}
+          className="layout__logo"
+          alt="Tentakel – Das Magazin"
+        ></img>
       </a>
     </header>
     {children}

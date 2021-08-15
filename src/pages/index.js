@@ -96,7 +96,11 @@ const IndexPage = () => {
           </div>
         </main>
         <aside className="sidebar">
-          <img className="sidebar__img" src={imgSidebar} />
+          <img
+            className="sidebar__img"
+            src={imgSidebar}
+            alt="Sidebar – Eine Vorschau"
+          />
         </aside>
       </Layout>
     </>

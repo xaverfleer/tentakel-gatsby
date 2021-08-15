@@ -15,7 +15,7 @@ const ArticlePreview = ({
     <div className="article-preview__author-and-date">{authorAndDate}</div>
     {pic && (
       <>
-        <img className="article-preview__img" src={pic}></img>
+        <img className="article-preview__img" src={pic} alt="TODO"></img>
         <div className="article-preview__img-description">{imgDescription}</div>
       </>
     )}
