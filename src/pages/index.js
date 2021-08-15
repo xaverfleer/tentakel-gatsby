@@ -103,6 +103,8 @@ const IndexPage = () => {
           />
         </aside>
       </Layout>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      <script href="/snippets/netlifyIdentity.js"></script>
     </>
   );
 };
