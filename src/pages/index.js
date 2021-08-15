@@ -45,13 +45,9 @@ const IndexPage = ({ data }) => {
                     pic={t.pic}
                     teaserText={t.teaserText}
                     title={t.title}
+                    quoteAuthor={t.quoteAuthor}
                   />
                 ))}
-              <ArticlePreviewSmall
-                category="Zitiert"
-                title="«Meine Meinung steht fest, irritieren Sie mich nicht mit Tatsachen.»"
-                quoteAuthor="Konrad Adenauer (1867 – 1967)"
-              />
             </div>
             <div className="preview-column">
               <ArticlePreviewSmall
@@ -126,6 +122,7 @@ export const pageQuery = graphql`
           show
           teaserText
           title
+          quoteAuthor
         }
       }
     }
