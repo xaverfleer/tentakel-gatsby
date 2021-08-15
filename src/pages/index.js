@@ -14,7 +14,6 @@ import ArticlePreview from "../components/ArticlePreview";
 import ArticlePreviewSmall from "../components/ArticlePreviewSmall";
 import Layout from "../components/Layout";
 
-// markup
 const IndexPage = ({ data }) => {
   const { allMarkdownRemark } = data;
   const allTeasers = allMarkdownRemark.nodes.map((n) => n.frontmatter);
