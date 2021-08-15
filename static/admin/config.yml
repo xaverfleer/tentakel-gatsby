@@ -9,4 +9,18 @@ collections:
     folder: "content/main-page/teasers"
     create: true
     fields:
-      - { label: Titel, name: title, widget: "string" }
+      - { name: title, label: Titel, widget: "string" }
+      - { name: "teaserText", label: "Vorschautext", widget: "text" }
+      - { name: "pic", label: "Bild", widget: "image", allow_multiple: false }
+      - {
+          name: "authorAndDate",
+          label: "Autor + Datum (für Artikel)",
+          widget: "string",
+        }
+      - { name: "category", label: "Kategorie", widget: "string" }
+      - {
+          name: "show",
+          label: "Anzeigen",
+          widget: "select",
+          options: ["Hauptartikel", "Spalte 1", "Spalte 2", "Spalte 3"],
+        }
