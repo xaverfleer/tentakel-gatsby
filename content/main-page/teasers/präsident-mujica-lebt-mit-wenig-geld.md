@@ -1,6 +1,6 @@
 ---
 title: Präsident Mujica lebt mit wenig Geld
-teaserText: In einem Interview in Uruguay erz'hlt der abgehende Präsident, wieso
+teaserText: In einem Interview in Uruguay erzählt der abgehende Präsident, wieso
   er nicht im Präsidentenpalast leben will. Und wieso er keinen Groll auf seine
   ehemaligen Folterer hat und nur Sinn und Leben sieht, ohne Hass.
 pic: uploads/praesident-mujica.png
