@@ -9,6 +9,7 @@ collections:
     folder: "content/main-page/teasers"
     create: true
     fields:
+      - { name: "mdCategory", widget: "hidden", default: "teaser" }
       - { name: title, label: Titel, widget: "string" }
       - { name: "teaserText", label: "Vorschautext", widget: "text" }
       - { name: "pic", label: "Bild", widget: "image", allow_multiple: false }

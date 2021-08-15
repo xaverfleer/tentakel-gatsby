@@ -1,4 +1,6 @@
 import * as React from "react";
+import { graphql } from "gatsby";
+
 import "../style.css";
 
 import imgBlume from "../images/blume.png";
@@ -6,7 +8,6 @@ import imgGurten from "../images/eindruecke-00.png";
 import imgKatze from "../images/katze.png";
 import imgLoslassenDranbleiben from "../images/loslassen-dranbleiben.png";
 import imgMalerei from "../images/malerei.png";
-import imgPraesidentMujica from "../images/praesident-mujica.png";
 import imgPlastik from "../images/plastik.png";
 import imgSchnauzeVoll from "../images/schnauze-voll.png";
 import imgSidebar from "../images/sidebar-screenshot.png";
@@ -16,21 +17,27 @@ import ArticlePreviewSmall from "../components/ArticlePreviewSmall";
 import Layout from "../components/Layout";
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const { allMarkdownRemark } = data;
+  const allTeasers = allMarkdownRemark.nodes.map((n) => n.frontmatter);
+  const mainTeasers = allTeasers.filter((t) => t.show === "Hauptartikel");
+
   return (
     <>
       <title>Tentakel | Online Magazin</title>
       <Layout>
         <main className="main">
-          <ArticlePreview
-            authorAndDate="18. Juni 2021, Corlos Gabetta"
-            category="Reportage"
-            pic={imgPraesidentMujica}
-            teaserText="In einem Interview in Uruguay erz'hlt der abgehende Präsident, wieso er nicht im Präsidentenpalast leben will. Und wieso er keinen Groll auf seine ehemaligen Folterer hat und nur Sinn und Leben sieht, ohne Hass."
-            title="Präsident Mujica lebt mit wenig Geld"
-          />
+          {mainTeasers.map((t) => (
+            <ArticlePreview
+              authorAndDate={t.authorAndDate}
+              category={t.category}
+              title={t.title}
+              pic={t.pic}
+              teaserText={t.teaserText}
+            />
+          ))}
           <div className="preview-columns">
-            <div class="preview-column">
+            <div className="preview-column">
               <ArticlePreviewSmall
                 authorAndDate="7. Juli 2021, Camilla Landbö"
                 category="Aus dem Leben eines Tintenfisches #1"
@@ -110,3 +117,22 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query allTeasers {
+    allMarkdownRemark(
+      filter: { frontmatter: { mdCategory: { eq: "teaser" } } }
+    ) {
+      nodes {
+        frontmatter {
+          authorAndDate
+          category
+          pic
+          show
+          teaserText
+          title
+        }
+      }
+    }
+  }
+`;
