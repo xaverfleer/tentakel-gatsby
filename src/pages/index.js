@@ -3,10 +3,7 @@ import { graphql } from "gatsby";
 
 import "../style.css";
 
-import imgBlume from "../images/blume.png";
-import imgGurten from "../images/eindruecke-00.png";
 import imgKatze from "../images/katze.png";
-import imgMalerei from "../images/malerei.png";
 import imgSchnauzeVoll from "../images/schnauze-voll.png";
 import imgSidebar from "../images/sidebar-screenshot.png";
 
@@ -34,41 +31,23 @@ const IndexPage = ({ data }) => {
             />
           ))}
           <div className="preview-columns">
-            <div className="preview-column">
-              {allTeasers
-                .filter((t) => t.show === "Spalte 1")
-                .map((t) => (
-                  <ArticlePreviewSmall
-                    authorAndDate={t.authorAndDate}
-                    category={t.category}
-                    pic={t.pic}
-                    teaserText={t.teaserText}
-                    title={t.title}
-                    quoteAuthor={t.quoteAuthor}
-                  />
-                ))}
-            </div>
-            <div className="preview-column">
-              <ArticlePreviewSmall
-                category="Das Interview"
-                title="«Ich will mein leben mit Malerei gestalten»"
-                pic={imgMalerei}
-                authorAndDate="16. Juni 2021, Regine Häckel"
-                teaserText="Die Künstlerin aus Brugg macht sich viele Gedanken über das Leben nach der Ausstellung."
-              ></ArticlePreviewSmall>
-              <ArticlePreviewSmall
-                category="Eindrücke"
-                pic={imgGurten}
-                imgDescription="Gurten, Januar 2021"
-              ></ArticlePreviewSmall>
-              <ArticlePreviewSmall
-                authorAndDate="7. Juli 2021, Camilla Landbö"
-                category="Aus dem Leben eines Tintenfisches #1"
-                pic={imgBlume}
-                teaserText="Harry geht mit vielen Kindern OPlastik einsammeln. Danach sind die Strände wieder sauber. Es ist eine mühselige Arbeit, mit Sitt. Viele Inseln ziehen nach."
-                title="Wieso Plastik am Strand mein Leben vermiest"
-              />
-            </div>
+            {["Spalte 1", "Spalte 2"].map((columnName) => (
+              <div className="preview-column">
+                {allTeasers
+                  .filter((t) => t.show === columnName)
+                  .map((t) => (
+                    <ArticlePreviewSmall
+                      authorAndDate={t.authorAndDate}
+                      category={t.category}
+                      pic={t.pic}
+                      teaserText={t.teaserText}
+                      title={t.title}
+                      quoteAuthor={t.quoteAuthor}
+                      imgDescription={t.imgDescription}
+                    />
+                  ))}
+              </div>
+            ))}
             <div className="preview-column">
               <ArticlePreviewSmall
                 category="Die Serie – Frauenfeindlichkeit im System #1"
@@ -122,6 +101,7 @@ export const pageQuery = graphql`
           teaserText
           title
           quoteAuthor
+          imgDescription
         }
       }
     }
