@@ -6,9 +6,7 @@ import "../style.css";
 import imgBlume from "../images/blume.png";
 import imgGurten from "../images/eindruecke-00.png";
 import imgKatze from "../images/katze.png";
-import imgLoslassenDranbleiben from "../images/loslassen-dranbleiben.png";
 import imgMalerei from "../images/malerei.png";
-import imgPlastik from "../images/plastik.png";
 import imgSchnauzeVoll from "../images/schnauze-voll.png";
 import imgSidebar from "../images/sidebar-screenshot.png";
 
@@ -38,20 +36,17 @@ const IndexPage = ({ data }) => {
           ))}
           <div className="preview-columns">
             <div className="preview-column">
-              <ArticlePreviewSmall
-                authorAndDate="7. Juli 2021, Camilla Landbö"
-                category="Aus dem Leben eines Tintenfisches #1"
-                pic={imgPlastik}
-                teaserText="Harry geht mit vielen Kindern OPlastik einsammeln. Danach sind die Strände wieder sauber. Es ist eine mühselige Arbeit, mit Sitt. Viele Inseln ziehen nach."
-                title="Wieso Plastik am Strand mein Leben vermiest"
-              />
-              <ArticlePreviewSmall
-                authorAndDate="16. Juni 2021, Rolf Brügger"
-                category="5 Fragen an..."
-                pic={imgLoslassenDranbleiben}
-                teaserText="Die Künstlerin aus Brugg macht sich viele Gedanken über das Leben nach der Ausstellung."
-                title="«Loslassen heisst dranbleiben»"
-              />
+              {allTeasers
+                .filter((t) => t.show === "Spalte 1")
+                .map((t) => (
+                  <ArticlePreviewSmall
+                    authorAndDate={t.authorAndDate}
+                    category={t.category}
+                    pic={t.pic}
+                    teaserText={t.teaserText}
+                    title={t.title}
+                  />
+                ))}
               <ArticlePreviewSmall
                 category="Zitiert"
                 title="«Meine Meinung steht fest, irritieren Sie mich nicht mit Tatsachen.»"

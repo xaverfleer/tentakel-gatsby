@@ -19,6 +19,7 @@ collections:
           label: "Autor + Datum (für Artikel)",
           widget: "string",
         }
+      - { name: quoteAuthor, label: Zitatautor, widget: string }
       - { name: "category", label: "Kategorie", widget: "string" }
       - {
           name: "show",
