@@ -10,21 +10,49 @@ collections:
     folder: "content/main-page/teasers"
     create: true
     fields:
-      - { name: "mdCategory", widget: "hidden", default: "teaser" }
-      - { name: title, label: Titel, widget: "string" }
-      - { name: "teaserText", label: "Vorschautext", widget: "text" }
-      - { name: "pic", label: "Bild", widget: "image", allow_multiple: false }
+      - {
+          name: "mdCategory",
+          widget: "hidden",
+          default: "teaser",
+          required: false,
+        }
+      - { name: title, label: Titel, widget: "string", required: false }
+      - {
+          name: "teaserText",
+          label: "Vorschautext",
+          widget: "text",
+          required: false,
+        }
+      - {
+          name: "pic",
+          label: "Bild",
+          widget: "image",
+          allow_multiple: false,
+          required: false,
+        }
       - {
           name: "authorAndDate",
           label: "Autor + Datum (für Artikel)",
           widget: "string",
+          required: false,
         }
-      - { name: quoteAuthor, label: Zitatautor, widget: string }
-      - { name: "category", label: "Kategorie", widget: "string" }
+      - {
+          name: quoteAuthor,
+          label: Zitatautor,
+          widget: string,
+          required: false,
+        }
+      - {
+          name: "category",
+          label: "Kategorie",
+          widget: "string",
+          required: false,
+        }
       - {
           name: "show",
           label: "Anzeigen",
           widget: "select",
           options: ["Hauptartikel", "Spalte 1", "Spalte 2", "Spalte 3"],
+          required: false,
         }
-      - { name: ordering, lanel: Reihenfolge, widget: number }
+      - { name: ordering, lanel: Reihenfolge, widget: number, required: false }
