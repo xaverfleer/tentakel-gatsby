@@ -11,39 +11,44 @@ import Layout from "../components/Layout";
 
 const IndexPage = ({ data }) => {
   const { allMarkdownRemark } = data;
-  const allTeasers = allMarkdownRemark.nodes.map((n) => n.frontmatter);
-  const mainTeasers = allTeasers.filter((t) => t.show === "Hauptartikel");
+  const { group } = allMarkdownRemark;
+  const mainTeaserFrontmatters = group[0].nodes.map((node) => node.frontmatter);
+  const frontmattersByColumn = group
+    .slice(1, 4)
+    .map((group) => group.nodes.map((node) => node.frontmatter));
 
   return (
     <>
       <title>Tentakel | Online Magazin</title>
       <Layout>
         <main className="main">
-          {mainTeasers.map((t) => (
-            <ArticlePreview
-              authorAndDate={t.authorAndDate}
-              category={t.category}
-              title={t.title}
-              pic={t.pic}
-              teaserText={t.teaserText}
-            />
-          ))}
+          {mainTeaserFrontmatters.map((fm) => {
+            return (
+              <ArticlePreview
+                authorAndDate={fm.authorAndDate}
+                category={fm.category}
+                key={fm.title || fm.pic}
+                title={fm.title}
+                pic={fm.pic}
+                teaserText={fm.teaserText}
+              />
+            );
+          })}
           <div className="preview-columns">
-            {["Spalte 1", "Spalte 2", "Spalte 3"].map((columnName) => (
-              <div className="preview-column">
-                {allTeasers
-                  .filter((t) => t.show === columnName)
-                  .map((t) => (
-                    <ArticlePreviewSmall
-                      authorAndDate={t.authorAndDate}
-                      category={t.category}
-                      pic={t.pic}
-                      teaserText={t.teaserText}
-                      title={t.title}
-                      quoteAuthor={t.quoteAuthor}
-                      imgDescription={t.imgDescription}
-                    />
-                  ))}
+            {frontmattersByColumn.map((frontmatters) => (
+              <div key={frontmatters[0].show} className="preview-column">
+                {frontmatters.map((fm) => (
+                  <ArticlePreviewSmall
+                    key={fm.title || fm.pic}
+                    authorAndDate={fm.authorAndDate}
+                    category={fm.category}
+                    pic={fm.pic}
+                    teaserText={fm.teaserText}
+                    title={fm.title}
+                    quoteAuthor={fm.quoteAuthor}
+                    imgDescription={fm.imgDescription}
+                  />
+                ))}
               </div>
             ))}
           </div>
@@ -68,17 +73,20 @@ export const pageQuery = graphql`
   query allTeasers {
     allMarkdownRemark(
       filter: { frontmatter: { mdCategory: { eq: "teaser" } } }
+      sort: { fields: frontmatter___ordering, order: DESC }
     ) {
-      nodes {
-        frontmatter {
-          authorAndDate
-          category
-          pic
-          show
-          teaserText
-          title
-          quoteAuthor
-          imgDescription
+      group(field: frontmatter___show) {
+        nodes {
+          frontmatter {
+            authorAndDate
+            category
+            imgDescription
+            pic
+            quoteAuthor
+            show
+            teaserText
+            title
+          }
         }
       }
     }

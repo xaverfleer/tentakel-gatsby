@@ -27,3 +27,4 @@ collections:
           widget: "select",
           options: ["Hauptartikel", "Spalte 1", "Spalte 2", "Spalte 3"],
         }
+      - { name: ordering, lanel: Reihenfolge, widget: number }
