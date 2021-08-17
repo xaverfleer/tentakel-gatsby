@@ -5,18 +5,6 @@ locale: de
 media_folder: "static/uploads"
 public_folder: "uploads"
 collections:
-  - name: main page
-    label: Startseite
-    folder: content/main-page/index
-    create: true
-    fields:
-      - {
-          name: teaser,
-          widget: relation,
-          collection: teasers,
-          value_field: title,
-          search_fields: [title],
-        }
   - name: "teasers"
     label: "Artikelvorschauen"
     folder: "content/main-page/teasers"
@@ -62,7 +50,7 @@ collections:
         }
       - {
           name: "show",
-          label: "Anzeigen",
+          label: "Wo anzeigen",
           widget: "select",
           options: ["Hauptartikel", "Spalte 1", "Spalte 2", "Spalte 3"],
           required: false,
