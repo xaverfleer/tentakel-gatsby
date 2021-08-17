@@ -10,7 +10,13 @@ collections:
     folder: content/main-page/index
     create: true
     fields:
-      - { name: teaser, widget: relation, collection: teasers, value_field: *, search_fields: * }
+      - {
+          name: teaser,
+          widget: relation,
+          collection: teasers,
+          value_field: title,
+          search_fields: title,
+        }
   - name: "teasers"
     label: "Artikelvorschauen"
     folder: "content/main-page/teasers"
