@@ -5,8 +5,9 @@ locale: de
 media_folder: "static/uploads"
 public_folder: "uploads"
 collections:
-  - name: "teasers"
-    label: "Artikelvorschauen"
+  - name: teasers
+    identifier_field: id
+    label: Artikelvorschauen
     folder: "content/main-page/teasers"
     create: true
     fields:
@@ -16,6 +17,7 @@ collections:
           default: "teaser",
           required: false,
         }
+      - { name: id, label: ID (eindeutig), widget: string }
       - { name: title, label: Titel, widget: "string", required: false }
       - {
           name: "teaserText",

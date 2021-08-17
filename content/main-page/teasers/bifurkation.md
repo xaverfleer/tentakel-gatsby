@@ -1,4 +1,5 @@
 ---
+id: "gedacht: bifurkation"
 mdCategory: teaser
 title: «Bifurkation»
 category: Gedacht
