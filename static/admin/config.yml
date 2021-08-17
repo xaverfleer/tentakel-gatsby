@@ -5,6 +5,12 @@ locale: de
 media_folder: "static/uploads"
 public_folder: "uploads"
 collections:
+  - name: main page
+    label: Startseite
+    folder: content/main-page/index
+    create: true
+    fields:
+      - { name: teaser, widget: relation, collection: teasers, value_field: *, search_fields: * }
   - name: "teasers"
     label: "Artikelvorschauen"
     folder: "content/main-page/teasers"
