@@ -14,7 +14,7 @@ collections:
           name: teaser,
           widget: relation,
           collection: teasers,
-          value_field: [title],
+          value_field: title,
           search_fields: [title],
         }
   - name: "teasers"
