@@ -1,4 +1,5 @@
 ---
+id: "Artikel: Katze"
 mdCategory: teaser
 title: «Ich will mein leben mit Malerei gestalten»
 teaserText: Die Künstlerin aus Brugg macht sich viele Gedanken über das Leben nach der Ausstellung.

@@ -1,4 +1,5 @@
 ---
+id: "Artikel: «Loslassen heisst dranbleiben»"
 mdCategory: teaser
 title: «Loslassen heisst dranbleiben»
 teaserText: Die Künstlerin aus Brugg macht sich viele Gedanken über das Leben nach der Ausstellung.

@@ -1,4 +1,5 @@
 ---
+id: "Zitat: Tatsachen"
 mdCategory: teaser
 title: «Meine Meinung steht fest, irritieren Sie mich nicht mit Tatsachen.»
 category: Zitiert

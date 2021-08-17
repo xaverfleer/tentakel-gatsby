@@ -1,4 +1,5 @@
 ---
+id: "Artikel: «Hab Schnauze voll»"
 mdCategory: teaser
 title: «Hab Schnauze voll»
 teaserText: Die Künstlerin aus Brugg macht sich viele Gedanken über das Leben
