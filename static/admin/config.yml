@@ -12,7 +12,7 @@ collections:
     create: true
     fields:
       - {
-          name: "mdCategory",
+          name: "templateKey",
           widget: "hidden",
           default: "teaser",
           required: false,

@@ -1,5 +1,5 @@
 ---
-mdCategory: teaser
+templateKey: teaser
 id: "Artikel: Präsident Mujica"
 title: Präsident Mujica lebt mit wenig Geld und viel Zeit
 teaserText: In einem Interview in Uruguay erzählt der abgehende Präsident, wieso

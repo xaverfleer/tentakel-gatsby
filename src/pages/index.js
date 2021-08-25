@@ -72,7 +72,7 @@ export default IndexPage;
 export const pageQuery = graphql`
   query allTeasers {
     allMarkdownRemark(
-      filter: { frontmatter: { mdCategory: { eq: "teaser" } } }
+      filter: { frontmatter: { templateKey: { eq: "teaser" } } }
       sort: { fields: frontmatter___ordering, order: DESC }
     ) {
       group(field: frontmatter___show) {

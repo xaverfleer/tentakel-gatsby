@@ -1,6 +1,6 @@
 ---
 id: "Eindrücke: Gurten 2021"
-mdCategory: teaser
+templateKey: teaser
 pic: uploads/gurten-2021.png
 category: Eindrücke
 imgDescription: Gurten, Januar 2021
