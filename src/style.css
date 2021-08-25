@@ -3,8 +3,35 @@ body {
   font-size: 2rem;
 }
 
+div,
+p {
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 0.5em 0 1em 0;
+}
+
 html {
   font-size: 8px;
+}
+
+.article__body p {
+  margin: 0.5em 3em 1em 0;
+}
+
+.article__category {
+  font-size: 3.23606rem;
+  margin: 2em 0 0 0;
+}
+
+.article__main-image {
+  width: 100%;
+}
+
+.article__teaser {
+  font-size: 3.23606rem;
+  margin-bottom: 1em;
 }
 
 .article-preview {
