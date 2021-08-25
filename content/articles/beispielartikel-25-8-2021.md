@@ -25,21 +25,10 @@ content: >-
 
   Womit ich mich noch schwer tue:
 
-
-  \- Videos einsetzen
-
-
-  \- Bildlegende
-
-
-  \- Audio
-
-
-  \- Kasten
-
-
-  \- Dokumente
-
-
-  \- Kommentare
+  - Videos einsetzen
+  - Bildlegende
+  - Audio
+  - Kasten
+  - Dokumente
+  - Kommentare
 ---
