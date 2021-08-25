@@ -66,5 +66,5 @@ collections:
     fields:
       - { name: id, label: ID (eindeutig), widget: string }
       - { name: title, label: Titel, widget: string }
-      - { name: date, label: Zeitstempel, widget: date }
+      - { name: datetime, label: Zeitstempel, widget: date }
       - { name: content, label: Inhalt, widget: markdown }
