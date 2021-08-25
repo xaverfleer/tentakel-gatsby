@@ -58,3 +58,13 @@ collections:
           required: false,
         }
       - { name: ordering, lanel: Reihenfolge, widget: number, required: false }
+  - name: articles
+    identifier_field: id
+    label: Artikel
+    folder: content/articles
+    create: true
+    fields:
+      - { name: id, label: ID (eindeutig), widget: string }
+      - { name: title, label: Titel, widget: string }
+      - { name: date, label: Zeitstempel, widget: date }
+      - { name: content, label: Inhalt, widget: markdown }
