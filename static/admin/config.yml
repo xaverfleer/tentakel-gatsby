@@ -69,5 +69,5 @@ collections:
       - { name: title, label: Titel, widget: string }
       - { name: teaser, label: Anreisser, widget: string }
       - { name: datetime, label: Zeitstempel, widget: date }
-      - { name: author, label: Autor, widget: text }
+      - { name: author, label: Autor, widget: string }
       - { name: body, label: Inhalt, widget: markdown }
