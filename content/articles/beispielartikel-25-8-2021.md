@@ -2,7 +2,7 @@
 id: Beispielartikel - 25.8.2021
 title: Beispielartikel
 date: 2021-08-25T08:29:05.181Z
-content: >-
+body: >-
   > Dies ist ein Zitat
 
 

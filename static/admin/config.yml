@@ -65,6 +65,9 @@ collections:
     create: true
     fields:
       - { name: id, label: ID (eindeutig), widget: string }
+      - { name: category, label: Kategorie, widget: string }
       - { name: title, label: Titel, widget: string }
+      - { name: teaser, label: Anreisser, widget: string }
       - { name: datetime, label: Zeitstempel, widget: date }
-      - { name: content, label: Inhalt, widget: markdown }
+      - { name: author, label: Autor, widget: text }
+      - { name: body, label: Inhalt, widget: markdown }
