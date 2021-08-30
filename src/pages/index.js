@@ -18,6 +18,7 @@ const IndexPage = ({ data }) => {
   const fullArticlePreviews = data.fullArticlePreviews.nodes.map((preview) => {
     const fm = preview.frontmatter;
     fm.authorAndDate = `${fm.author}, ${fm.datetime}`;
+    fm.slug = preview.fields.slug;
     return fm;
   });
 
@@ -54,6 +55,7 @@ const IndexPage = ({ data }) => {
                     authorAndDate={fm.authorAndDate}
                     category={fm.category}
                     pic={fm.pic}
+                    slug={fm.slug}
                     teaserText={fm.teaserText}
                     title={fm.title}
                     quoteAuthor={fm.quoteAuthor}
@@ -105,6 +107,9 @@ export const pageQuery = graphql`
       filter: { frontmatter: { templateKey: { eq: "article" } } }
     ) {
       nodes {
+        fields {
+          slug
+        }
         frontmatter {
           author: author
           category
