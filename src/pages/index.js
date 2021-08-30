@@ -7,6 +7,8 @@ import ArticlePreview from "../components/ArticlePreview";
 import ArticlePreviewSmall from "../components/ArticlePreviewSmall";
 import Layout from "../components/Layout";
 
+import { isoDateToGermanDate } from "../modules/dataConverter";
+
 const IndexPage = ({ data }) => {
   const { allMarkdownRemark } = data;
   const { group } = allMarkdownRemark;
@@ -17,7 +19,7 @@ const IndexPage = ({ data }) => {
 
   const fullArticlePreviews = data.fullArticlePreviews.nodes.map((preview) => {
     const fm = preview.frontmatter;
-    fm.authorAndDate = `${fm.author}, ${fm.datetime}`;
+    fm.authorAndDate = `${isoDateToGermanDate(fm.datetime)}, ${fm.author}`;
     fm.slug = preview.fields.slug;
     return fm;
   });
