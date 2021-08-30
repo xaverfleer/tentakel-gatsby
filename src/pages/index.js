@@ -17,6 +17,19 @@ const IndexPage = ({ data }) => {
     .slice(1, 4)
     .map((group) => group.nodes.map((node) => node.frontmatter));
 
+  const fullArticlePreviews = data.fullArticlePreviews.nodes.map((preview) => {
+    const fm = preview.frontmatter;
+    fm.authorAndDate = `${fm.author}, ${fm.datetime}`;
+    return fm;
+  });
+
+  {
+    let i = 0;
+    for (let preview of fullArticlePreviews) {
+      frontmattersByColumn[i % 3].unshift(preview);
+    }
+  }
+
   return (
     <>
       <title>Tentakel | Online Magazin</title>
@@ -87,6 +100,20 @@ export const pageQuery = graphql`
             teaserText
             title
           }
+        }
+      }
+    }
+    fullArticlePreviews: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "article" } } }
+    ) {
+      nodes {
+        frontmatter {
+          author: author
+          category
+          datetime
+          pic
+          title
+          teaserText: teaser
         }
       }
     }
