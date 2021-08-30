@@ -2,7 +2,6 @@ import * as React from "react";
 import { graphql } from "gatsby";
 
 import imgSidebar from "../images/sidebar-screenshot.png";
-import danielMichel from "../../static/uploads/daniel-michel.jpg";
 
 import Layout from "../components/Layout";
 
@@ -17,7 +16,7 @@ const Article = ({ data }) => {
         <main className="main">
           <img
             className="article__main-image"
-            src={danielMichel}
+            src={`/${fm.pic}`}
             alt="Jean Michel"
           />
           <div className="article__category">{fm.category}</div>
@@ -51,6 +50,7 @@ export const pageQuery = graphql`
         author
         category
         datetime
+        pic
         title
         teaser
       }
