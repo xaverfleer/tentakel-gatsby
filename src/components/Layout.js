@@ -1,4 +1,5 @@
 import React from "react";
+import "../style.css";
 
 import header from "../images/header-2021-07-30.jpg";
 
