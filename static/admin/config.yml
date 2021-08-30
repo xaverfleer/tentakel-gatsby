@@ -58,10 +58,10 @@ collections:
           required: false,
         }
       - { name: ordering, lanel: Reihenfolge, widget: number, required: false }
-  - name: articles
+  - name: Artikel
     identifier_field: id
     label: Artikel
-    folder: content/articles
+    folder: content/artikel
     create: true
     slug: "{{slug}}"
     fields:
