@@ -1,8 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import "../style.css";
-
 import imgSidebar from "../images/sidebar-screenshot.png";
 
 import ArticlePreview from "../components/ArticlePreview";
