@@ -8,7 +8,8 @@ collections:
   - name: teasers
     identifier_field: id
     label: Artikelvorschauen
-    folder: "content/main-page/teasers"
+    label_singular: Artikelvorschau
+    folder: content/main-page/teasers
     create: true
     fields:
       - {
