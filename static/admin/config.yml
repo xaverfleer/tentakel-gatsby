@@ -63,6 +63,7 @@ collections:
     label: Artikel
     folder: content/articles
     create: true
+    slug: "{{slug}}"
     fields:
       - { name: templateKey, widget: hidden, default: article, required: false }
       - { name: id, label: ID (eindeutig), widget: string }
