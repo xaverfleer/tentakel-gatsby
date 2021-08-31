@@ -43,6 +43,11 @@ p {
   margin: 0 auto;
 }
 
+.article-preview a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .article-preview--main {
   max-width: 600px;
   position: relative;
