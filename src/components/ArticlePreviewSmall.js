@@ -13,7 +13,7 @@ const ArticlePreview = ({
   <div className={`article-preview article-preview--small`}>
     <a href={slug}>
       <div className="article-preview__category--small">{category}</div>
-      <h2 className="article-preview__title">{title}</h2>
+      {title && <h2 className="article-preview__title">{title}</h2>}
       <div className="article-preview__author-and-date">{authorAndDate}</div>
       {pic && (
         <>
