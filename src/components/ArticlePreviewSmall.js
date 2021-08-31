@@ -10,8 +10,8 @@ const ArticlePreview = ({
   teaserText,
   title,
 }) => (
-  <a href={slug}>
-    <div className={`article-preview article-preview--small`}>
+  <div className={`article-preview article-preview--small`}>
+    <a href={slug}>
       <div className="article-preview__category--small">{category}</div>
       <h2 className="article-preview__title">{title}</h2>
       <div className="article-preview__author-and-date">{authorAndDate}</div>
@@ -25,7 +25,7 @@ const ArticlePreview = ({
       )}
       <div className="article-preview__teaser-text">{teaserText}</div>
       <div className="article-preview__quote-author">{quoteAuthor}</div>
-    </div>
-  </a>
+    </a>
+  </div>
 );
 export default ArticlePreview;
