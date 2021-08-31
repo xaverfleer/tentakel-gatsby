@@ -1,10 +1,12 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "../style.css";
 
 import header from "../images/header-2021-07-30.jpg";
 
 const Layout = ({ children }) => (
   <div className="wrapper">
+    <Helmet htmlAttributes={{ lang: "de" }} />
     <header className="header">
       <a className="layout__link" href="/">
         <img

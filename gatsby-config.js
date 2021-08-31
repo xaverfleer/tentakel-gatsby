@@ -3,6 +3,7 @@ module.exports = {
     siteUrl: `https://tentakel.netlify.app/`,
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-filesystem",
       options: {
