@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
+
 import firstDraft from "../images/screenshot.jpg";
 import secondDraft from "../images/screenshot-2021-07-30.jpg";
 import thirdDraft from "../images/screenshot-2021-08-13.pdf";
@@ -11,7 +13,9 @@ import zeitschriftAusgaben from "../images/zeitschrift-ausgaben.jpg";
 const IndexPage = () => {
   return (
     <main style={{ textAlign: "center" }}>
-      <title>Tentakel | Entwürfe</title>
+      <Helmet>
+        <title>Tentakel | Entwürfe</title>
+      </Helmet>
       <h1>Entwürfe</h1>
       <h2>Alle Zeitschrift Auflagen – 14. 8. 2021</h2>
       <img alt="Alle Zeitschrift Auflagen" src={zeitschriftAusgaben} />

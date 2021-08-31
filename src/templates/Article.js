@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 
 import imgSidebar from "../images/sidebar-screenshot.png";
@@ -11,7 +12,9 @@ const Article = ({ data }) => {
 
   return (
     <>
-      <title>Tentakel | {fm.title}</title>
+      <Helmet>
+        <title>Tentakel | {fm.title}</title>
+      </Helmet>
       <Layout>
         <main className="main">
           <img

@@ -1,5 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 
 import imgSidebar from "../images/sidebar-screenshot.png";
 
@@ -33,7 +34,9 @@ const IndexPage = ({ data }) => {
 
   return (
     <>
-      <title>Tentakel | Online Magazin</title>
+      <Helmet>
+        <title>Tentakel | Online Magazin</title>
+      </Helmet>
       <Layout>
         <main className="main">
           {mainTeaserFrontmatters.map((fm) => {
