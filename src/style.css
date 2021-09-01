@@ -155,3 +155,7 @@ p {
     "header header"
     "main sidebar";
 }
+
+.wrapper--article {
+  grid-template-columns: 1fr;
+}

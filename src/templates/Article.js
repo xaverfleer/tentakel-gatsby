@@ -15,7 +15,7 @@ const Article = ({ data }) => {
       <Helmet>
         <title>Tentakel | {fm.title}</title>
       </Helmet>
-      <Layout>
+      <Layout type="article">
         <main className="main">
           <img
             className="article__main-image"

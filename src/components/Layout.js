@@ -4,8 +4,8 @@ import "../style.css";
 
 import header from "../images/header-2021-07-30.jpg";
 
-const Layout = ({ children }) => (
-  <div className="wrapper">
+const Layout = ({ children, type }) => (
+  <div className={`wrapper ${type && `wrapper--${type}`}`}>
     <Helmet htmlAttributes={{ lang: "de" }} />
     <header className="header">
       <a className="layout__link" href="/">
