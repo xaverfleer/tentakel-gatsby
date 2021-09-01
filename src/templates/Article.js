@@ -33,13 +33,6 @@ const Article = ({ data }) => {
             dangerouslySetInnerHTML={{ __html: article.html }}
           ></div>
         </main>
-        <aside className="sidebar">
-          <img
-            className="sidebar__img"
-            src={imgSidebar}
-            alt="Sidebar – Eine Vorschau"
-          />
-        </aside>
       </Layout>
     </>
   );
