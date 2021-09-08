@@ -180,6 +180,7 @@ p {
 
 .wrapper {
   background-color: #fff;
+  box-sizing: border-box;
   margin: 1em auto;
   max-width: 1080px;
   display: grid;
@@ -231,4 +232,10 @@ p {
   grid-area: cover;
   padding: 3em;
   max-width: 80%;
+}
+
+@media (max-width: 1080px) {
+  .wrapper {
+    margin: 0;
+  }
 }
