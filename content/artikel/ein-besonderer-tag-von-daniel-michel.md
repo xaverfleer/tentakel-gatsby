@@ -1,7 +1,7 @@
 ---
 id: Ein besonderer Tag von Daniel Michel
 templateKey: article
-category: Ein besonderer Tag von
+category: Ein besonderer Tag von...
 pic: uploads/daniel-michel.jpg
 title: «Das Buch jagte mich durch die Nacht»
 teaser: "Daniel Michel ist heute 44 Jahre alt, Physiker und Unternehmer – das
