@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
 import "../style.css";
@@ -15,6 +16,12 @@ const Layout = ({ children, type }) => (
           alt="Tentakel – Das Magazin"
         ></img>
       </a>
+      <nav>
+        <Link to="/">Die Serie</Link>
+        <Link to="/">Reihen</Link>
+        <Link to="/">Eindrücke</Link>
+        <Link to="/">Die Zeitschrift</Link>
+      </nav>
     </header>
     {children}
   </div>
