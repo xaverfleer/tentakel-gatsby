@@ -2,8 +2,6 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 
-import imgSidebar from "../images/sidebar-screenshot.png";
-
 import Layout from "../components/Layout";
 
 const Article = ({ data }) => {
