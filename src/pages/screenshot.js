@@ -5,7 +5,7 @@ import firstDraft from "../images/screenshot.jpg";
 import secondDraft from "../images/screenshot-2021-07-30.jpg";
 import thirdDraft from "../images/screenshot-2021-08-13.pdf";
 import artikelElemente from "../images/artikel-elemente.jpg";
-import magazinAlle from "../images/magazin-alle.jpg";
+import zeitschriftAlle from "../images/zeitschrift-alle.jpg";
 import zeitschriftAusgabe01 from "../images/zeitschrift-ausgabe-01.pdf";
 import zeitschriftAusgaben from "../images/zeitschrift-ausgaben.jpg";
 
@@ -31,7 +31,7 @@ const IndexPage = () => {
       <h2>Zeitschrift Ausgabe 01 – 14. 8. 2021</h2>
       <a href={zeitschriftAusgabe01}>PDF</a>
       <h2>Alle Zeitschrift Ausgaben (Tagi)– 14. 8. 2021</h2>
-      <img alt="Alle Zeitschrift Ausgaben (Tagi)" src={magazinAlle} />
+      <img alt="Alle Zeitschrift Ausgaben (Tagi)" src={zeitschriftAlle} />
       <h2>Artikel Elemente – 14. 8. 2021</h2>
       <img alt="Artikel Elemente" src={artikelElemente} />
       <h2>Dritter Entwurf – 13. 8. 2021</h2>
