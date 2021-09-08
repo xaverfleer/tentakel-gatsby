@@ -135,11 +135,10 @@ p {
 }
 
 .main-navigation__entry {
-  flex: 10% 0 0;
+  flex: auto 0 0;
   display: flex;
   justify-content: center;
-  padding: 0.5em;
-  margin: 1em 0;
+  margin: 1.5em;
 }
 
 .preview-column {
