@@ -148,7 +148,7 @@ p {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-template-areas:
