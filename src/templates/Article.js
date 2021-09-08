@@ -4,6 +4,8 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 
+import { isoDateToGermanDate } from "../modules/dataConverter";
+
 const Article = ({ data }) => {
   const { article } = data;
   const fm = article.frontmatter;
@@ -15,7 +17,7 @@ const Article = ({ data }) => {
       </Helmet>
       <Layout type="article">
         <aside class="sidebar sidebar--article">
-          <div class="sidebar__entry">{fm.datetime.split("T")[0]}</div>
+          <div class="sidebar__entry">{isoDateToGermanDate(fm.datetime)}</div>
           <div class="sidebar__entry">{fm.author}</div>
         </aside>
         <main className="main main--article">
