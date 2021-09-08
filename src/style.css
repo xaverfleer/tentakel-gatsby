@@ -61,7 +61,7 @@ p {
 }
 
 .article-preview__category--main {
-  border: 1px solid black;
+  border: 1px solid #888;
   background-color: #fff;
   left: 0;
   margin-right: auto;
@@ -87,7 +87,7 @@ p {
 
 .article-preview__teaser {
   background-color: #fff;
-  border: 1px solid black;
+  border: 1px solid #888;
   max-width: 80%;
   margin: 0 auto;
   padding: 1em;
