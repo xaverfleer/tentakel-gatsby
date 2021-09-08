@@ -194,3 +194,38 @@ p {
     "header header"
     "sidebar main";
 }
+
+.wrapper--die-zeitschrift {
+  background-color: #000;
+  color: #fff;
+  grid-template-columns: 4fr 6fr;
+  grid-template-areas:
+    "header header"
+    "cover main";
+}
+
+.wrapper--die-zeitschrift a {
+  color: #ddd;
+}
+
+.zeitschrift {
+  margin: 3em;
+}
+
+.zeitschrift__subtitle {
+  font-size: 3.23606rem;
+  margin: 1em 0;
+}
+
+.zeitschrift-cta {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  margin: 0.4em 0;
+}
+
+.zeitschrift-cover {
+  grid-area: cover;
+  padding: 3em;
+  max-width: 80%;
+}
