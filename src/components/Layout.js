@@ -27,7 +27,7 @@ const Layout = ({ children, type }) => (
         <Link className="main-navigation__entry" to="/">
           Eindrücke
         </Link>
-        <Link className="main-navigation__entry" to="/">
+        <Link className="main-navigation__entry" to="/die-zeitschrift/">
           Die Zeitschrift
         </Link>
       </nav>
