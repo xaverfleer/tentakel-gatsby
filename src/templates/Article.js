@@ -14,18 +14,19 @@ const Article = ({ data }) => {
         <title>Tentakel | {fm.title}</title>
       </Helmet>
       <Layout type="article">
-        <main className="main">
+        <aside class="sidebar sidebar--article">
+          <div class="sidebar__entry">{fm.datetime.split("T")[0]}</div>
+          <div class="sidebar__entry">{fm.author}</div>
+        </aside>
+        <main className="main main--article">
+          <div className="article__category">{fm.category}</div>
+          <h1 className="artile__title">{fm.title}</h1>
+          <div className="article__teaser">{fm.teaser}</div>
           <img
             className="article__main-image"
             src={`/${fm.pic}`}
             alt="Jean Michel"
           />
-          <div className="article__category">{fm.category}</div>
-          <h1 className="artile__title">{fm.title}</h1>
-          <div className="article__teaser">{fm.teaser}</div>
-          <div>
-            {fm.author}, {fm.datetime.split("T")[0]}
-          </div>
           <div
             className="article__body"
             dangerouslySetInnerHTML={{ __html: article.html }}
