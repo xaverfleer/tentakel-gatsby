@@ -181,7 +181,7 @@ p {
 .wrapper {
   background-color: #fff;
   box-sizing: border-box;
-  margin: 1em auto;
+  margin: 5em auto;
   max-width: 1400px;
   display: grid;
   grid-template-columns: 4fr 1fr;
