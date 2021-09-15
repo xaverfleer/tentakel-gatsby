@@ -182,7 +182,7 @@ p {
   background-color: #fff;
   box-sizing: border-box;
   margin: 1em auto;
-  max-width: 1080px;
+  max-width: 1400px;
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-template-areas:
@@ -234,7 +234,7 @@ p {
   max-width: 80%;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1400px) {
   .wrapper {
     margin: 0;
   }
