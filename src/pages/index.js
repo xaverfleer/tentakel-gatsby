@@ -29,6 +29,7 @@ const IndexPage = ({ data }) => {
     let i = 0;
     for (let preview of fullArticlePreviews) {
       frontmattersByColumn[i % 3].unshift(preview);
+      i++;
     }
   }
 
