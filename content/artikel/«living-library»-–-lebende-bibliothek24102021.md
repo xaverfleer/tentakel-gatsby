@@ -7,7 +7,7 @@ teaser: "Statt ein Buch zu lesen, in die Lebensgeschichte eines Menschens
   eintauchen: Das kann man bei «Living Library» in Zürich tun. Die Veranstaltung
   schlägt Brücken zu Menschen, die mit Vorurteilen behaftet sind – indem sie
   Menschen für Gespräche ausleiht."
-datetime: 2021-10-24T13:00:33.274Z
+datetime: 2021-10-25T13:00:33.274Z
 pic: uploads/living-library.jpg
 author: Camilla Landbø
 hide: true
