@@ -7,7 +7,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { templateKey: { eq: "article" } } }
+        filter: {
+          frontmatter: { templateKey: { eq: "article" }, draft: { eq: false } }
+        }
       ) {
         nodes {
           id
@@ -15,7 +17,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             slug
           }
           frontmatter {
-            draft
             author
             datetime
             category
