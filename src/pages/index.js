@@ -110,7 +110,9 @@ export const pageQuery = graphql`
       }
     }
     fullArticlePreviews: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "article" } } }
+      filter: {
+        frontmatter: { templateKey: { eq: "article" }, draft: { eq: false } }
+      }
     ) {
       nodes {
         fields {
