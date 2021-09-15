@@ -16,10 +16,14 @@ Haben Sie schon mal mit einem Adoptivvater, einem Polizisten, einer Prostituiert
 
 Wie wäre es, wenn Sie mal mit einer dieser Personen reden könnten und ihr viele Fragen stellen dürften? Das geht. Und zwar in der «Living Library», auch lebendige oder lebende Bibliothek genannt. Selbstverständlich ist es keine im wortwörtlichen Sinne. Sondern eine Veranstaltungsform, die wie eine traditionelle Bibliothek funktioniert: Leser leihen Bücher aus und bringen sie nach einer bestimmten Zeit wieder zurück. Nur dass diese Bücher nicht aus Papier bestehen, sondern – eben – aus Fleisch und Blut. Es sind Menschen, die von Menschen gelesen werden.
 
+**Redet man miteinander, verschwinden viele Vorurteile**\
 Bei der «Living Library» geht es also darum, sich eine Person für ein Gespräch auszuleihen. Für ein paar Stunden kann man sich mit Leben oder Schicksalen anderer auseinandersetzen, die man im Alltag selten oder kaum erzählt bekommt und die nicht auf Papier zu lesen sind. Damit werden vielleicht sogar Missverständnisse und Vorurteile aus dem Weg geräumt.
 
 Wurde «Living Library» im Jahr 2000 in Dänemark ins Leben gerufen, um gegen Rassismus und Gewalt zu kämpfen, so gibt es heute international zahlreiche Umsetzungen dieser Idee. Als feste Bestandteile oder sporadische Ereignisse ist die Veranstaltung in Bibliotheken oder auf Festivals mittlerweile in Österreich, Deutschland, Spanien, Italien, Grossbritannien, Island und in vielen Ländern mehr anzutreffen.
 
+**Diesen Samstag findet die «Gesprächs-Ausleihe» statt**\
 Und seit 2010 wird die Lebende Bibliothek ebenso in der Schweiz durchgeführt: Die Initianten brachten das Veranstaltungsformat von Istanbul erstmals nach Zürich. Als Schweizer Organisation hat «Living Library Zürich» seither viele andere Organisationen beraten, die heute ähnliche Veranstaltungen in der Schweiz anbieten, etwa in Zug.
 
-Nun, würden Sie gerne mit einem Adoptivvater oder einem Hare Krishna reden? Dann haben Sie im Oktober Gelegenheit dazu. Am Samstag, 30. Oktober, findet die nächste öffentliche «Living Library» in Zürich statt. Auf der «Leseliste» stehen unter anderem auch ein Bauer, ein Tinyhouse-Bewohner oder ein minderjähriger Flüchtling. Ab 16 Uhr können die Bücher an der Ausleihetheke «gebucht» werden.
+Nun, würden Sie gerne mit einem Adoptivvater oder einem Hare Krishna reden? Dann haben Sie im Oktober Gelegenheit dazu. Am Samstag, 30. Oktober, findet die nächste öffentliche «Living Library» in Zürich statt. Auf der «Leseliste» stehen unter anderem auch ein Bauer, ein Tinyhouse-Bewohner und ein minderjähriger Flüchtling. Ab 16 Uhr können die Bücher an der Ausleihetheke «gebucht» werden.
+
+Mehr Infos: [https://livinglibrary.ch](https://livinglibrary.ch/)
