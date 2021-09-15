@@ -1,7 +1,7 @@
 ---
 templateKey: article
-id: Plauderei in der Abendfrische01102021
-category: Spanien
+id: Plauderei in der Abendfrische04102021
+category: Gesellschaft
 title: Plauderei in der Abendfrische
 teaser: "Ein spanisches Dorf will den Brauch des allabendlichen Herunterfahrens
   vor der Haustür bei der Unesco schützen lassen. "
