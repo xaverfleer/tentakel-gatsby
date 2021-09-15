@@ -67,7 +67,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { name: templateKey, widget: hidden, default: article, required: false }
-      - { name: id, label: ID (eindeutig), widget: string }
+      - {
+          name: id,
+          label: Eine eindeutige ID (z.B. Datum + Titel),
+          widget: string,
+        }
       - {
           name: "draft",
           label: "Entwurf (noch nicht live)",
