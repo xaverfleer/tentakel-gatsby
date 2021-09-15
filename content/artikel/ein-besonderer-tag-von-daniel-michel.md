@@ -1,5 +1,6 @@
 ---
 id: Ein besonderer Tag von Daniel Michel
+draft: false
 templateKey: article
 category: Ein besonderer Tag von...
 pic: uploads/daniel-michel.jpg

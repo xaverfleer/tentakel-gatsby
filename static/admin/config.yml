@@ -68,6 +68,12 @@ collections:
     fields:
       - { name: templateKey, widget: hidden, default: article, required: false }
       - { name: id, label: ID (eindeutig), widget: string }
+      - {
+          name: "draft",
+          label: "Entwurf (noch nicht live)",
+          widget: "boolean",
+          default: true,
+        }
       - { name: category, label: Kategorie, widget: string }
       - { name: title, label: Titel, widget: string }
       - { name: teaser, label: Anreisser, widget: string }

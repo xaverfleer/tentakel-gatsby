@@ -15,6 +15,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             slug
           }
           frontmatter {
+            draft
             author
             datetime
             category
