@@ -1,7 +1,7 @@
 ---
 templateKey: article
 id: «Living Library» – lebende Bibliothek24102021
-category: ˙vorgestellt
+category: °vorgestellt
 title: «Living Library» – lebende Bibliothek
 teaser: "Statt ein Buch zu lesen, in die Lebensgeschichte eines Menschens
   eintauchen: Das kann man bei «Living Library» in Zürich tun. Die Veranstaltung
