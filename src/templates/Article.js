@@ -16,9 +16,11 @@ const Article = ({ data }) => {
         <title>Tentakel | {fm.title}</title>
       </Helmet>
       <Layout type="article">
-        <aside class="sidebar sidebar--article">
-          <div class="sidebar__entry">{isoDateToGermanDate(fm.datetime)}</div>
-          <div class="sidebar__entry">{fm.author}</div>
+        <aside className="sidebar sidebar--article">
+          <div className="sidebar__entry">
+            {isoDateToGermanDate(fm.datetime)}
+          </div>
+          <div className="sidebar__entry">{fm.author}</div>
         </aside>
         <main className="main main--article">
           <div className="article__category">{fm.category}</div>
