@@ -59,7 +59,7 @@ collections:
           required: false,
         }
       - { name: ordering, lanel: Reihenfolge, widget: number, required: false }
-  - name: Artikel
+  - name: artikel
     identifier_field: id
     label: Artikel
     folder: content/artikel
