@@ -8,7 +8,6 @@ teaser: "Ein spanisches Dorf will den Brauch des allabendlichen Herunterfahrens
 datetime: 2021-10-04T13:00:53.928Z
 pic: uploads/plauderei-in-der-abendfrische.jpg
 author: Camilla Landbø
-draft: true
 ---
 
 Sich raus an die frische Luft setzen, nichts Besonderes tun und den Tag ausklingen lassen. Dabei mit Freunden, Verwandten und Nachbarn plaudern, über Gott und die Welt, die Neuigkeiten des Tages und das Coronavirus. Selbstverständlich wird auch getratscht, geklagt und über die Politiker gewettert. So sieht das abendliche Dasein in Andalusien – im Süden Spaniens – tagtäglich aus. Ebenso im herbstlichen September, wo die Temperaturen durchschnittlich noch bei 30 Grad liegen.

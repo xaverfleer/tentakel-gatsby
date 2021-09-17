@@ -10,8 +10,8 @@ teaser: "Statt ein Buch zu lesen, in die Lebensgeschichte eines Menschens
 datetime: 2021-10-25T13:00:33.274Z
 pic: uploads/living-library.jpg
 author: Camilla Landbø
-draft: true
 ---
+
 Haben Sie schon mal mit einem Adoptivvater, einem Polizisten, einer Prostituierten, einem Burnout-Betroffenen oder mit einer Person, die Esssucht hat, geredet? Wissen Sie, wie das Leben eines Tinyhouse-Bewohners oder eines Mitglieds von Hare Krishna aussieht? Mehr noch: Haben Sie Vorurteile gegenüber oben erwähnten Menschen oder zumindest Berührungsängste?
 
 Wie wäre es, wenn Sie mal mit einer dieser Personen reden könnten und ihr viele Fragen stellen dürften? Das geht. Und zwar in der «Living Library», auch lebendige oder lebende Bibliothek genannt. Selbstverständlich ist es keine im wortwörtlichen Sinne. Sondern eine Veranstaltungsform, die wie eine traditionelle Bibliothek funktioniert: Leser leihen Bücher aus und bringen sie nach einer bestimmten Zeit wieder zurück. Nur dass diese Bücher nicht aus Papier bestehen, sondern – eben – aus Fleisch und Blut. Es sind Menschen, die von Menschen gelesen werden.

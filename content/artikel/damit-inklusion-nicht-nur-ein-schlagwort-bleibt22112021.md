@@ -1,7 +1,6 @@
 ---
 templateKey: article
 id: Damit Inklusion nicht nur ein Schlagwort bleibt22112021
-draft: true
 category: °vorgestellt
 title: Damit Inklusion nicht nur ein Schlagwort bleibt
 teaser: Die Firma «mittschaffe.ch» bringt Menschen zusammen. Ihr Angebot richtet

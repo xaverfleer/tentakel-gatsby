@@ -7,9 +7,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(`
     {
       allMarkdownRemark(
-        filter: {
-          frontmatter: { templateKey: { eq: "article" }, draft: { eq: false } }
-        }
+        filter: { frontmatter: { templateKey: { eq: "article" } } }
       ) {
         nodes {
           id
@@ -37,16 +35,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const posts = result.data.allMarkdownRemark.nodes;
-  posts.forEach((post, index) => {
-    // const previousPostId = index === 0 ? null : posts[index - 1].id;
-    // const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
+  posts.forEach((post) => {
     createPage({
       path: post.fields.slug,
       component: Article,
       context: {
         id: post.id,
-        // previousPostId,
-        // nextPostId,
       },
     });
   });

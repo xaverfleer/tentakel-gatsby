@@ -1,5 +1,4 @@
 ---
-draft: false
 templateKey: article
 id: «Das Buch jagte mich durch die Nacht»07102021
 category: Ein besonderer Tag von...
