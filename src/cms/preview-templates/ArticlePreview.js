@@ -10,7 +10,7 @@ export default ({ entry }) => {
           title: data.title,
           author: data.author,
           category: data.category,
-          datetime: data.datetime,
+          datetime: data.datetime.toISOString(),
           pic: data.pic,
           teaser: data.teaser,
         },
