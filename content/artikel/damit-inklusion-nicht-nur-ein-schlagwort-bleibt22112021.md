@@ -9,7 +9,6 @@ teaser: Die Firma «mittschaffe.ch» bringt Menschen zusammen. Ihr Angebot richt
   Arbeitsmarkt sind. Seit der Gründung 2014 wächst die Nachfrage stetig.
 datetime: 2021-11-22T02:00:56.980Z
 author: Redaktion
-hide: true
 ---
 Immer noch ist es für Menschen mit Handicap schwierig, in der Schweiz eine Arbeitsstelle zu finden. Die Gründe sind unterschiedlich. Durch ihr Handicap haben sie zum Einen weniger berufliche Wahlmöglichkeiten. Zum Anderen werden sie von Firmen weniger eingestellt – etwa aus Berührungsangst oder Unwissen. Für Menschen mit Handicap bedeutet das: erschwerte Bedingungen arbeitstätig zu sein und sich in der Gesellschaft dazugehörig zu fühlen. Gerade die Integration auch im Arbeitsmarkt würde das Leben von Menschen mit Handicap und die Gesellschaft bereichern.
 

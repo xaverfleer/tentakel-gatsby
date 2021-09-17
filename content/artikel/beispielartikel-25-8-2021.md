@@ -1,7 +1,6 @@
 ---
 draft: true
 author: a
-hide: true
 date: 2021-08-25T08:29:05.181Z
 id: Beispielartikel - 25.8.2021
 category: a

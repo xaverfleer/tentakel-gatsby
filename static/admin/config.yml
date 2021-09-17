@@ -91,4 +91,3 @@ collections:
         }
       - { name: author, label: Autor, widget: string }
       - { name: body, label: Inhalt, widget: markdown }
-      - { name: hide, label: Verstecken, widget: boolean }

@@ -10,7 +10,6 @@ teaser: "Statt ein Buch zu lesen, in die Lebensgeschichte eines Menschens
 datetime: 2021-10-25T13:00:33.274Z
 pic: uploads/living-library.jpg
 author: Camilla Landbø
-hide: true
 draft: true
 ---
 Haben Sie schon mal mit einem Adoptivvater, einem Polizisten, einer Prostituierten, einem Burnout-Betroffenen oder mit einer Person, die Esssucht hat, geredet? Wissen Sie, wie das Leben eines Tinyhouse-Bewohners oder eines Mitglieds von Hare Krishna aussieht? Mehr noch: Haben Sie Vorurteile gegenüber oben erwähnten Menschen oder zumindest Berührungsängste?

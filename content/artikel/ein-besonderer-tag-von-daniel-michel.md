@@ -9,7 +9,6 @@ teaser: "Daniel Michel ist heute 44 Jahre alt, Physiker und Unternehmer – das
 datetime: 2021-10-07T13:00:39.975Z
 pic: uploads/daniel-michel.jpg
 author: Camilla Landbø
-hide: true
 ---
 
 «Ich war eigentlich immer ein sehr schlechter Schüler, vor allem in den mathematischen Fächern, das war meine grosse Schwäche. Man könnte sogar behaupten, dass ich zeitweise der Klassenschlechteste war. Das ist keine Schande, es zu sagen. Eigentlich hatte ich mich mit dem Schicksal abgefunden, dass ich nie etwas Grossartiges erreichen und eher einen einfacheren Job ausüben würde. Ehrlich gesagt war ich an der Schule auch nicht interessiert. Ich hatte keine Lust zu lernen, und abgesehen davon fiel es mir eher schwer.
