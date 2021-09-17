@@ -6,10 +6,11 @@ title: Plauderei in der Abendfrische
 teaser: "Ein spanisches Dorf will den Brauch des allabendlichen Herunterfahrens
   vor der Haustür bei der Unesco schützen lassen. "
 datetime: 2021-10-04T13:00:53.928Z
-pic: uploads/plauderei-in-der-abendfrische-wer-nahe-am-strand-lebt-verlegt-die-abendliche-geselligkeit-ans-meeresufer.-málaga-andalusien-spanien-2.jpg
+pic: uploads/plauderei-in-der-abendfrische.jpg
 author: Camilla Landbø
 draft: true
 ---
+
 Sich raus an die frische Luft setzen, nichts Besonderes tun und den Tag ausklingen lassen. Dabei mit Freunden, Verwandten und Nachbarn plaudern, über Gott und die Welt, die Neuigkeiten des Tages und das Coronavirus. Selbstverständlich wird auch getratscht, geklagt und über die Politiker gewettert. So sieht das abendliche Dasein in Andalusien – im Süden Spaniens – tagtäglich aus. Ebenso im herbstlichen September, wo die Temperaturen durchschnittlich noch bei 30 Grad liegen.
 
 Das gesellige Zusammensitzen und Palavern bei Sonnenuntergang ist ein Ritual, das überdies einen Namen hat: *Charla al fresco* – Plauderei in der Abendfrische. «Diese Tradition kommt aus einer Zeit, als es noch kein Fernsehen und keine Klimaanlage gab», sagt der spanische Anthropologe Isidoro Moreno. Früher seien die Häuser sehr einfach, klein und nicht isoliert gewesen, gerade in den heissen Sommermonaten mit Temperaturen über 40 Grad habe man es drinnen kaum ausgehalten. «Ich erinnere mich, wie Leute aus meinem Viertel sogar Matratzen raustrugen», erzählt der emeritierte Professor der Universität Sevilla, «um dann nach dem Schwatz, in der kühleren Luft auch gleich zu schlafen.»
