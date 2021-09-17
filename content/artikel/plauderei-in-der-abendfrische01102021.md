@@ -25,7 +25,7 @@ Ein alter Brauch also, dieses abendliche Vor-die-Tür-Gehen, der bis heute prakt
 
 Besonders bedenklich findet der Anthropolog allerdings eine andere Entwicklung in der Gesellschaft: «Für alles, was man unternehmen will, muss man heutzutage Geld in die Finger nehmen.» So würden auf den Plätzen Spaniens, die seit jeher für die Menschen ein Treffpunkt sind, mehr und mehr Sitzbänke verschwinden, damit Cafés und Restaurants ihre Stühle und Tische weiter rausstellen könnten. «Alles wird zur Ware, auch das Zusammensitzen im Freien.» Umso attraktiver werde im Gegenzug wieder die Tradition der *Charla al fresco*, so der 77-Jährige, denn: «Ausser dem Bedürfnis nach frischer Abendluft und Geselligkeit ist sie frei von einem Zweck und kostet nichts.»
 
-![](uploads/plauderei-in-der-abendfrische-wer-nahe-am-strand-lebt-verlegt-die-abendliche-geselligkeit-ans-meeresufer.-málaga-andalusien-spanien-1.-klein.jpeg "Wer nahe am Strand lebt, verlegt die abendliche Geselligkeit ans Meeresufer (Málaga, Andalusien). / © cal")
+![](uploads/plauderei-in-der-abendfrische-2.jpeg "Wer nahe am Strand lebt, verlegt die abendliche Geselligkeit ans Meeresufer (Málaga, Andalusien). / © cal")
 
 José Carlos Sánchez, Bürgermeister von Algar, schwärmt: «Es ist der schönste Moment des Tages.» Seine Mutter sei 82 Jahre alt und sitze jeden Abend draussen in ihrer Strasse. Nach der Arbeit würde er bei ihr vorbeigehen, sich hinsetzen und «wir tauschen uns aus». Dass seine Ankündigung auf Facebook, den Brauch in der Unesco schützen lassen zu wollen, so viel Medienrummel und Kritik auslösen würde, dachte er niemals.
 
