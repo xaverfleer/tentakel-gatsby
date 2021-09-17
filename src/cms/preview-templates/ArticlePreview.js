@@ -1,7 +1,10 @@
 import Article from "../../templates/Article";
+import showdown from "showdown";
 
 export default ({ entry }) => {
   const data = entry.getIn(["data"]).toJS();
+  const converter = new showdown.Converter(),
+    html = converter.makeHtml(data.body);
 
   return Article({
     data: {
@@ -14,7 +17,7 @@ export default ({ entry }) => {
           pic: data.pic,
           teaser: data.teaser,
         },
-        html: data.body,
+        html,
       },
     },
   });
