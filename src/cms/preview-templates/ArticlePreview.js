@@ -5,7 +5,7 @@ const hastToHtml = require(`hast-util-to-html`);
 
 const remarker = new remark();
 
-export default ({ entry }) => {
+export default function ArticlePreview({ entry }) {
   const data = entry.getIn(["data"]).toJS();
   const markdownAst = remarker.parse(data.body);
   const htmlAst = mdastToHast(markdownAst, { allowDangorousHtml: true });
@@ -29,4 +29,4 @@ export default ({ entry }) => {
       },
     },
   });
-};
+}
