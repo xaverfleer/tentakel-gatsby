@@ -10,6 +10,9 @@ export default ({ entry }) => {
   const markdownAst = remarker.parse(data.body);
   const htmlAst = mdastToHast(markdownAst, { allowDangorousHtml: true });
   const html = hastToHtml(htmlAst, { allowDangorousHtml: true });
+  const htmlSanitized = html
+    .split('<img src="uploads/')
+    .join('<img src="/uploads/');
 
   return Article({
     data: {
@@ -22,7 +25,7 @@ export default ({ entry }) => {
           pic: data.pic,
           teaser: data.teaser,
         },
-        html,
+        html: htmlSanitized,
       },
     },
   });
