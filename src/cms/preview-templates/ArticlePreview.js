@@ -1,10 +1,15 @@
 import Article from "../../templates/Article";
-import showdown from "showdown";
+const remark = require(`remark`);
+const mdastToHast = require(`mdast-util-to-hast`);
+const hastToHtml = require(`hast-util-to-html`);
+
+const remarker = new remark();
 
 export default ({ entry }) => {
   const data = entry.getIn(["data"]).toJS();
-  const converter = new showdown.Converter(),
-    html = converter.makeHtml(data.body);
+  const markdownAst = remarker.parse(data.body);
+  const htmlAst = mdastToHast(markdownAst, { allowDangorousHtml: true });
+  const html = hastToHtml(htmlAst, { allowDangorousHtml: true });
 
   return Article({
     data: {
