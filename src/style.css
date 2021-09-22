@@ -62,9 +62,9 @@ p {
 }
 
 .article-preview__author-and-date {
-  color: #ccc;
-  padding-bottom: 0.5rem;
   font-size: 1.23607rem;
+  font-weight: 300;
+  margin-top: 2em;
 }
 
 .article-preview__category--main {
