@@ -82,7 +82,9 @@ p {
 }
 
 .article-preview__category--small {
-  color: #bbb;
+  font-size: 1.23607rem;
+  font-weight: 300;
+  margin-bottom: 1em;
   text-transform: uppercase;
 }
 
