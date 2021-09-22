@@ -67,11 +67,14 @@ p {
 }
 
 .article-preview__category--main {
-  border: 1px solid #888;
+  border: 1px solid #aaa;
   background-color: #fff;
+  font-weight: 300;
+  font-size: 90%;
   left: 0;
+  letter-spacing: 0.2em;
   margin-right: auto;
-  padding: 1rem 3.5rem;
+  padding: 1.5rem 2.5rem;
   position: absolute;
   text-transform: uppercase;
   top: 0;
