@@ -96,11 +96,9 @@ p {
 
 .article-preview__teaser {
   background-color: #fff;
-  border: 1px solid #888;
-  max-width: 80%;
-  margin: 0 auto;
+  border: 0.2px solid #aaa;
+  border-top-width: 0;
   padding: 1em;
-  transform: translateY(-3em);
 }
 
 .article-preview__title {
