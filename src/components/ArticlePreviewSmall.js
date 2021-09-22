@@ -26,9 +26,15 @@ const ArticlePreview = ({
           </div>
         </>
       )}
-      <div className="article-preview__teaser-text">{teaserText}</div>
-      <div className="article-preview__author-and-date">{authorAndDate}</div>
-      <div className="article-preview__quote-author">{quoteAuthor}</div>
+      {teaserText && (
+        <div className="article-preview__teaser-text">{teaserText}</div>
+      )}
+      {authorAndDate && (
+        <div className="article-preview__author-and-date">{authorAndDate}</div>
+      )}
+      {quoteAuthor && (
+        <div className="article-preview__quote-author">{quoteAuthor}</div>
+      )}
     </a>
   </div>
 );
