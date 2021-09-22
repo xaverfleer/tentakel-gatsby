@@ -1,7 +1,7 @@
 ---
 id: "Gedacht: Bifurkation"
 templateKey: teaser
-title: «Bifurkation»
+quote: «Bifurkation»
 category: Gedacht
 quoteAuthor: 16. März 2021, Redaktion
 ordering: 20

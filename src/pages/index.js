@@ -64,6 +64,7 @@ const IndexPage = ({ data }) => {
                     slug={fm.slug}
                     teaserText={fm.teaserText}
                     title={fm.title}
+                    quote={fm.quote}
                     quoteAuthor={fm.quoteAuthor}
                     imgDescription={fm.imgDescription}
                   />
@@ -101,6 +102,7 @@ export const pageQuery = graphql`
             category
             imgDescription
             pic
+            quote
             quoteAuthor
             show
             teaserText

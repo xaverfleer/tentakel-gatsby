@@ -104,6 +104,10 @@ p {
   text-align: end;
 }
 
+.article-preview__quote {
+  text-align: center;
+}
+
 .article-preview__teaser {
   background-color: #fff;
   border: 0.2px solid #aaa;
@@ -122,6 +126,9 @@ p {
 }
 
 .article-preview__quote-author {
+  font-size: 1.23607rem;
+  font-weight: 300;
+  margin-top: 2em;
   text-align: end;
 }
 
