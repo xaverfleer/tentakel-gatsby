@@ -14,7 +14,6 @@ const ArticlePreview = ({
     <a href={slug}>
       <div className="article-preview__category--small">{category}</div>
       {title && <h2 className="article-preview__title">{title}</h2>}
-      <div className="article-preview__author-and-date">{authorAndDate}</div>
       {pic && (
         <>
           <img className="article-preview__img" src={pic} alt="TODO"></img>
@@ -24,6 +23,7 @@ const ArticlePreview = ({
         </>
       )}
       <div className="article-preview__teaser-text">{teaserText}</div>
+      <div className="article-preview__author-and-date">{authorAndDate}</div>
       <div className="article-preview__quote-author">{quoteAuthor}</div>
     </a>
   </div>
