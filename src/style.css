@@ -98,6 +98,9 @@ p {
 }
 
 .article-preview__img-description {
+  font-size: 1.23607rem;
+  font-weight: 300;
+  margin-top: 2em;
   text-align: end;
 }
 
