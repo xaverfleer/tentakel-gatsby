@@ -16,7 +16,11 @@ const ArticlePreview = ({
       {title && <h2 className="article-preview__title">{title}</h2>}
       {pic && (
         <>
-          <img className="article-preview__img" src={pic} alt="TODO"></img>
+          <img
+            className="article-preview__img article-preview__img--small"
+            src={pic}
+            alt="TODO"
+          ></img>
           <div className="article-preview__img-description">
             {imgDescription}
           </div>
