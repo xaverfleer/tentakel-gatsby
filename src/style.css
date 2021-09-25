@@ -143,6 +143,20 @@ p {
   margin-top: 2em;
 }
 
+.impressions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.impressions__img {
+  max-width: 100%;
+}
+
+.impressions__impression {
+  flex: 0 1 30%;
+  margin: 0 1em 1em 0;
+}
+
 .layout__link {
   display: block;
   margin: 0 auto;

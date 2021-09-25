@@ -17,9 +17,14 @@ const EindrueckePage = ({ data }) => {
       </Helmet>
       <Layout>
         <main className="main">
-          {eindruecke.map((e) => (
-            <img src={e.pic} />
-          ))}
+          <div className="impressions">
+            {eindruecke.map((e) => (
+              <div className="impressions__impression">
+                <img className="impressions__img" src={e.pic} />
+                <div className="impression__title">{e.title}</div>
+              </div>
+            ))}
+          </div>
         </main>
       </Layout>
     </>
