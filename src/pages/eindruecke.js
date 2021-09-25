@@ -19,7 +19,7 @@ const EindrueckePage = ({ data }) => {
             {eindruecke.map((e) => (
               <div className="impressions__impression">
                 <img className="impressions__img" src={e.pic} />
-                <div className="impression__title">{e.title}</div>
+                <div className="impressions__title">{e.title}</div>
               </div>
             ))}
           </div>
