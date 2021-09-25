@@ -104,3 +104,4 @@ collections:
       - { name: event, label: Anlass, widget: string }
       - { name: date, label: Datum des Anlasses, widget: datetime }
       - { name: pic, label: Bild, widget: image, allow_multiple: false }
+      - { name: alt, label: Alt-Text, widget: string }
