@@ -152,24 +152,48 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
 }
 
 .impressions__impression {
   flex: 1 1 30%;
   height: 250px;
-  margin: 0 1em 1em 0;
+  margin: 0 0.5em 0.5em 0;
+  position: relative;
 }
 
-.impressions__impression:nth-of-type(6n - 5),
-.impressions__impression:nth-of-type(6n - 3),
-.impressions__impression:nth-of-type(6n - 1) {
+.impressions__impression:nth-of-type(9n - 8),
+.impressions__impression:nth-of-type(9n - 6),
+.impressions__impression:nth-of-type(9n - 4) {
   flex-basis: 33%;
 }
 
-.impressions__impression:nth-of-type(6n - 4),
-.impressions__impression:nth-of-type(6n - 2),
-.impressions__impression:nth-of-type(6n) {
+.impressions__impression:nth-of-type(9n - 7),
+.impressions__impression:nth-of-type(9n - 5),
+.impressions__impression:nth-of-type(9n - 3) {
   flex-basis: 24%;
+}
+
+.impressions__impression:nth-of-type(9n - 2) {
+  flex-basis: 31%;
+}
+
+.impressions__title {
+  background-color: #0000;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: #fff0;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.impressions__impression:hover .impressions__title {
+  background-color: #0008;
+  color: #fff;
 }
 
 .layout__link {
