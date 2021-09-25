@@ -86,3 +86,16 @@ collections:
           required: false,
         }
       - { name: ordering, lanel: Reihenfolge, widget: number, required: false }
+  - name: eindruecke
+    label: Eindrücke
+    label_singular: Eindruck
+    folder: content/eindruecke
+    create: true
+    fields:
+      - { name: templateKey, widget: hidden, default: article, required: false }
+      - { name: datetime, label: Zeitstempel, widget: datetime }
+      - { name: title, label: Titel, widget: string }
+      - { name: location, label: Ort, widget: string }
+      - { name: occasion, label: Anlass, widget: datetime }
+      - { name: date, label: Datum des Anlasses, widget: datetime }
+      - { name: pic, label: Bild, widget: image, allow_multiple: false }
