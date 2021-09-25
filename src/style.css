@@ -258,6 +258,12 @@ p {
   color: #ddd;
 }
 
+.wrapper--impressions {
+  grid-template-areas:
+    "header header"
+    "main main";
+}
+
 .zeitschrift {
   margin: 3em;
 }
