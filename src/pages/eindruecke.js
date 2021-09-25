@@ -32,6 +32,7 @@ export const pageQuery = graphql`
   query eindruecke {
     allMarkdownRemark(
       filter: { frontmatter: { templateKey: { eq: "eindruck" } } }
+      sort: { fields: frontmatter___datetime, order: DESC }
     ) {
       nodes {
         frontmatter {
