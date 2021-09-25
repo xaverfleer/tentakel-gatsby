@@ -149,12 +149,27 @@ p {
 }
 
 .impressions__img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .impressions__impression {
-  flex: 0 1 30%;
+  flex: 1 1 30%;
+  height: 250px;
   margin: 0 1em 1em 0;
+}
+
+.impressions__impression:nth-of-type(6n - 5),
+.impressions__impression:nth-of-type(6n - 3),
+.impressions__impression:nth-of-type(6n - 1) {
+  flex-basis: 33%;
+}
+
+.impressions__impression:nth-of-type(6n - 4),
+.impressions__impression:nth-of-type(6n - 2),
+.impressions__impression:nth-of-type(6n) {
+  flex-basis: 24%;
 }
 
 .layout__link {
