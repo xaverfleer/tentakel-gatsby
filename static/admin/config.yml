@@ -92,10 +92,15 @@ collections:
     folder: content/eindruecke
     create: true
     fields:
-      - { name: templateKey, widget: hidden, default: article, required: false }
+      - {
+          name: templateKey,
+          widget: hidden,
+          default: eindruck,
+          required: false,
+        }
       - { name: datetime, label: Zeitstempel, widget: datetime }
       - { name: title, label: Titel, widget: string }
       - { name: location, label: Ort, widget: string }
-      - { name: occasion, label: Anlass, widget: datetime }
+      - { name: event, label: Anlass, widget: string }
       - { name: date, label: Datum des Anlasses, widget: datetime }
       - { name: pic, label: Bild, widget: image, allow_multiple: false }
