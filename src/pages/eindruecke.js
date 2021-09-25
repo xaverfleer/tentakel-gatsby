@@ -4,8 +4,6 @@ import { Helmet } from "react-helmet";
 
 import Layout from "../components/Layout";
 
-import { isoDateToGermanDate } from "../modules/dataConverter";
-
 const EindrueckePage = ({ data }) => {
   const { nodes } = data.allMarkdownRemark;
   const eindruecke = nodes.map((n) => n.frontmatter);
