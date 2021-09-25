@@ -6,6 +6,32 @@ locale: de
 media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
+  - name: artikel
+    identifier_field: id
+    label: Artikel
+    folder: content/artikel
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: templateKey, widget: hidden, default: article, required: false }
+      - {
+          name: id,
+          label: Eine eindeutige ID (z.B. Titel + Datum),
+          widget: string,
+        }
+      - { name: category, label: Kategorie, widget: string }
+      - { name: title, label: Titel, widget: string }
+      - { name: teaser, label: Anreisser, widget: string }
+      - { name: datetime, label: Zeitstempel, widget: datetime }
+      - {
+          name: pic,
+          label: Bild,
+          widget: image,
+          allow_multiple: false,
+          required: false,
+        }
+      - { name: author, label: Autor, widget: string }
+      - { name: body, label: Inhalt, widget: markdown }
   - name: teasers
     identifier_field: id
     label: Artikelvorschauen
@@ -60,29 +86,3 @@ collections:
           required: false,
         }
       - { name: ordering, lanel: Reihenfolge, widget: number, required: false }
-  - name: artikel
-    identifier_field: id
-    label: Artikel
-    folder: content/artikel
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: templateKey, widget: hidden, default: article, required: false }
-      - {
-          name: id,
-          label: Eine eindeutige ID (z.B. Datum + Titel),
-          widget: string,
-        }
-      - { name: category, label: Kategorie, widget: string }
-      - { name: title, label: Titel, widget: string }
-      - { name: teaser, label: Anreisser, widget: string }
-      - { name: datetime, label: Zeitstempel, widget: datetime }
-      - {
-          name: pic,
-          label: Bild,
-          widget: image,
-          allow_multiple: false,
-          required: false,
-        }
-      - { name: author, label: Autor, widget: string }
-      - { name: body, label: Inhalt, widget: markdown }
