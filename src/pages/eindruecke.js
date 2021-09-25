@@ -15,7 +15,7 @@ const EindrueckePage = ({ data }) => {
       <Helmet>
         <title>Tentakel | Eindrücke</title>
       </Helmet>
-      <Layout>
+      <Layout type="impressions">
         <main className="main">
           <div className="impressions">
             {eindruecke.map((e) => (
