@@ -10,7 +10,7 @@ import Layout from "../components/Layout";
 
 import { isoDateToGermanDate } from "../modules/dataConverter";
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, location }) => {
   const { allMarkdownRemark } = data;
   const { group } = allMarkdownRemark;
   const mainTeaserFrontmatters = group[0].nodes.map((node) => node.frontmatter);
@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => {
       <Helmet>
         <title>Tentakel | Online Magazin</title>
       </Helmet>
-      <Layout>
+      <Layout pathname={location.pathname}>
         <main className="main">
           {mainTeaserFrontmatters.map((fm) => {
             return (

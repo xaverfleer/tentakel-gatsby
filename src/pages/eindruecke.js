@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 import Layout from "../components/Layout";
 
-const EindrueckePage = ({ data }) => {
+const EindrueckePage = ({ data, location }) => {
   const { nodes } = data.allMarkdownRemark;
   const eindruecke = nodes.map((n) => n.frontmatter);
 
@@ -13,7 +13,7 @@ const EindrueckePage = ({ data }) => {
       <Helmet>
         <title>Tentakel | Eindrücke</title>
       </Helmet>
-      <Layout type="impressions">
+      <Layout type="impressions" pathname={location.pathname}>
         <main className="main">
           <div className="impressions">
             {eindruecke.map((e) => (

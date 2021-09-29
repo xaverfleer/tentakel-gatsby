@@ -12,7 +12,7 @@ const paths = [
   { path: "/die-zeitschrift/", label: "Die Zeitschrift" },
 ];
 
-const Layout = ({ children, type }) => (
+const Layout = ({ children, pathname = "", type }) => (
   <div className={`wrapper ${type ? `wrapper--${type}` : ``}`}>
     <Helmet htmlAttributes={{ lang: "de" }} />
     <header className="header">
@@ -25,11 +25,21 @@ const Layout = ({ children, type }) => (
         ></img>
       </a>
       <nav className="main-navigation">
-        {paths.map((p) => (
-          <Link className="main-navigation__entry" to={p.path}>
-            {p.label}
-          </Link>
-        ))}
+        {paths.map((p) => {
+          const isCurrentPage =
+            pathname.replace(/\/$/, "") === p.path.replace(/\/$/, "");
+
+          let classes = `main-navigation__entry${
+            isCurrentPage ? " main-navigation__entry--current" : ""
+          }`;
+
+          return (
+            <Link className={classes} to={p.path}>
+              {" "}
+              {p.label}
+            </Link>
+          );
+        })}
       </nav>
     </header>
     {children}

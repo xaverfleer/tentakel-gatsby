@@ -226,6 +226,10 @@ p {
   text-transform: uppercase;
 }
 
+.main-navigation__entry--current {
+  color: #58a8a5;
+}
+
 .preview-column {
   margin: 0 1em;
   max-width: 30%;
@@ -293,7 +297,7 @@ p {
     "cover main";
 }
 
-.wrapper--die-zeitschrift a {
+.wrapper--die-zeitschrift a:not(.main-navigation__entry--current) {
   color: #ddd;
 }
 

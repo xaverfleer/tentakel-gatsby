@@ -5,13 +5,13 @@ import Layout from "../components/Layout";
 
 import imgZeitschrift from "../images/Zeitschrift-Sample-Cover.png";
 
-const IndexPage = () => {
+const IndexPage = ({ location }) => {
   return (
     <>
       <Helmet>
         <title>Tentakel | Die Zeitschrift zum Magazin</title>
       </Helmet>
-      <Layout type="die-zeitschrift">
+      <Layout type="die-zeitschrift" pathname={location.pathname}>
         <img
           src={imgZeitschrift}
           alt="Tentakel Zeitschrift – Ausgabe August 2021"
