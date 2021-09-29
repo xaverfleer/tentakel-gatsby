@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("./fonts/Quicksand/Quicksand-Medium.woff2") format("woff2");
+}
+
 a {
   text-decoration: none;
   color: #888;
@@ -139,6 +144,7 @@ p {
 .header__in-3-words {
   display: flex;
   justify-content: center;
+  font-family: Quicksand;
   font-size: 3.23606rem;
   margin-top: 2em;
 }
