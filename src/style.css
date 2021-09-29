@@ -2,11 +2,6 @@
 @import "./fonts/NunitoSans/stylesheet.css";
 @import "./fonts/Quicksand/stylesheet.css";
 
-@font-face {
-  font-family: "NimbusSans";
-  src: url("./fonts/NimbusSans/NimbusSanL-Bol.woff2") format("woff2");
-}
-
 a {
   text-decoration: none;
   color: #888;
@@ -24,7 +19,7 @@ h1 {
 h1,
 h2,
 h3 {
-  font-family: NimbusSans;
+  font-family: "Nunito Sans";
 }
 
 html {
