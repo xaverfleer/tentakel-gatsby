@@ -1,4 +1,10 @@
 @font-face {
+  font-family: "NotoSansJP";
+  src: url("./fonts/NotoSansJP/NotoSansJP-Medium-Alphabetic.woff2")
+    format("woff2");
+}
+
+@font-face {
   font-family: "Quicksand";
   src: url("./fonts/Quicksand/Quicksand-Medium.woff2") format("woff2");
 }
@@ -13,16 +19,12 @@ body {
   font-size: 2rem;
 }
 
-div,
-p {
-  font-family: sans-serif;
-}
-
 h1 {
   margin: 0.5em 0 1em 0;
 }
 
 html {
+  font-family: "NotoSansJP";
   font-size: 8px;
   background-color: #eee;
 }
