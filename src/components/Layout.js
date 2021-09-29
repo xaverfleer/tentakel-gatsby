@@ -5,6 +5,13 @@ import "../style.css";
 
 import header from "../images/header.jpg";
 
+const paths = [
+  { path: "/", label: "Die Serie" },
+  { path: "/", label: "Reihen" },
+  { path: "/eindruecke/", label: "Eindrücke" },
+  { path: "/die-zeitschrift/", label: "Die Zeitschrift" },
+];
+
 const Layout = ({ children, type }) => (
   <div className={`wrapper ${type ? `wrapper--${type}` : ``}`}>
     <Helmet htmlAttributes={{ lang: "de" }} />
@@ -18,18 +25,11 @@ const Layout = ({ children, type }) => (
         ></img>
       </a>
       <nav className="main-navigation">
-        <Link className="main-navigation__entry" to="/">
-          Die Serie
-        </Link>
-        <Link className="main-navigation__entry" to="/">
-          Reihen
-        </Link>
-        <Link className="main-navigation__entry" to="/eindruecke/">
-          Eindrücke
-        </Link>
-        <Link className="main-navigation__entry" to="/die-zeitschrift/">
-          Die Zeitschrift
-        </Link>
+        {paths.map((p) => (
+          <Link className="main-navigation__entry" to={p.path}>
+            {p.label}
+          </Link>
+        ))}
       </nav>
     </header>
     {children}
