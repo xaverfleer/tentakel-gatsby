@@ -1,3 +1,5 @@
+@import "./fonts/NunitoSans/stylesheet.css";
+
 @font-face {
   font-family: "NimbusSans";
   src: url("./fonts/NimbusSans/NimbusSanL-Bol.woff2") format("woff2");
@@ -232,6 +234,7 @@ p {
 .main-navigation {
   border-top: 2px solid #888;
   display: flex;
+  font-family: "Nunito Sans";
   justify-content: center;
 }
 
