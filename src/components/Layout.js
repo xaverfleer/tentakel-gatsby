@@ -34,8 +34,7 @@ const Layout = ({ children, pathname = "", type }) => (
           }`;
 
           return (
-            <Link className={classes} to={p.path}>
-              {" "}
+            <Link className={classes} key={p.label} to={p.path}>
               {p.label}
             </Link>
           );
