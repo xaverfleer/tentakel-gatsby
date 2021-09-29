@@ -1,15 +1,10 @@
+@import "./fonts/NotoSansJP/stylesheet.css";
 @import "./fonts/NunitoSans/stylesheet.css";
 @import "./fonts/Quicksand/stylesheet.css";
 
 @font-face {
   font-family: "NimbusSans";
   src: url("./fonts/NimbusSans/NimbusSanL-Bol.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "NotoSansJP";
-  src: url("./fonts/NotoSansJP/NotoSansJP-Medium-Alphabetic.woff2")
-    format("woff2");
 }
 
 a {
