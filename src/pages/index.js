@@ -53,8 +53,8 @@ const IndexPage = ({ data, location }) => {
             );
           })}
           <div className="preview-columns">
-            {frontmattersByColumn.map((frontmatters) => (
-              <div key={frontmatters[0].show} className="preview-column">
+            {frontmattersByColumn.map((frontmatters, i) => (
+              <div key={i} className="preview-column">
                 {frontmatters.map((fm) => (
                   <ArticlePreviewSmall
                     key={fm.title || fm.pic || fm.quote}
