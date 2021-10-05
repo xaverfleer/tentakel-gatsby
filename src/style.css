@@ -249,8 +249,8 @@ p {
 }
 
 .preview-column {
+  flex: 1 1 0;
   margin: 0 1em;
-  max-width: 30%;
 }
 
 .preview-column:first-of-type {
