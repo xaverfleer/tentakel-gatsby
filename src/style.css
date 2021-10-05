@@ -223,6 +223,10 @@ p {
   margin-top: 1em;
 }
 
+.main--article {
+  max-width: 800px;
+}
+
 .main-navigation {
   border-top: 2px solid #888;
   display: flex;
