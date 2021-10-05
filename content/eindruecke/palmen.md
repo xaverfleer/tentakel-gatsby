@@ -5,6 +5,6 @@ title: Palmen
 location: Palmen
 event: Abendstimmung
 date: 2021-05-25T13:00:00.000Z
-pic: uploads/eindruecke-01-palmen.png
+pic: /uploads/eindruecke-01-palmen.png
 alt: Palmen
 ---

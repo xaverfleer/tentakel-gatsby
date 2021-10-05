@@ -5,6 +5,6 @@ title: Regen
 location: Regen
 event: Abendstimmung
 date: 2021-05-25T13:00:00.000Z
-pic: uploads/eindruecke-03-regen.png
+pic: /uploads/eindruecke-03-regen.png
 alt: Regen
 ---

@@ -5,6 +5,6 @@ title: Kerze
 location: Kerze
 event: Abendstimmung
 date: 2021-05-25T13:00:00.000Z
-pic: uploads/eindruecke-09-kerze.png
+pic: /uploads/eindruecke-09-kerze.png
 alt: Kerze
 ---
