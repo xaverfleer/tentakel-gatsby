@@ -6,8 +6,8 @@ import "../style.css";
 import header from "../images/header.jpg";
 
 const paths = [
-  { path: "/", label: "Die Serie" },
-  { path: "/", label: "Reihen" },
+  // { path: "/", label: "Die Serie" },
+  // { path: "/", label: "Reihen" },
   { path: "/eindruecke/", label: "Eindrücke" },
   { path: "/die-zeitschrift/", label: "Die Zeitschrift" },
 ];
