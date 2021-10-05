@@ -13,7 +13,9 @@ const ArticlePreview = ({
 }) => (
   <div className={`article-preview article-preview--small`}>
     <a href={slug}>
-      <div className="article-preview__category--small">{category}</div>
+      <div className="article-preview__category article-preview__category--small">
+        {category}
+      </div>
       {title && <h2 className="article-preview__title">{title}</h2>}
       {quote && <h2 className="article-preview__quote">{quote}</h2>}
       {pic && (

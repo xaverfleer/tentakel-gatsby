@@ -74,6 +74,10 @@ p {
   margin-top: 2em;
 }
 
+.article-preview__category {
+  font-family: "Nunito Sans";
+}
+
 .article-preview__category--main {
   border: 0.2px solid #aaa;
   background-color: #fff;
