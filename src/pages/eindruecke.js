@@ -17,7 +17,7 @@ const EindrueckePage = ({ data, location }) => {
         <main className="main">
           <div className="impressions">
             {eindruecke.map((e) => (
-              <div className="impressions__impression">
+              <div className="impressions__impression" key={e.pic}>
                 <img className="impressions__img" src={e.pic} alt={e.title} />
                 <div className="impressions__title">{e.title}</div>
               </div>
