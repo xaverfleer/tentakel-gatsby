@@ -1,7 +1,7 @@
 ---
 templateKey: teaser
 id: "Artikel: Präsident Mujica"
-title: Präsident Mujica lebt mit wenig Geld und viel Zeit
+title: Präsident Mujica lebt mit wenig Geld
 teaserText: In einem Interview in Uruguay erzählt der abgehende Präsident, wieso
   er nicht im Präsidentenpalast leben will. Und wieso er keinen Groll auf seine
   ehemaligen Folterer hat und nur Sinn und Leben sieht, ohne Hass.
