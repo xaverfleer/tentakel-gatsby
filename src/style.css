@@ -1,4 +1,4 @@
-@import "./fonts/NotoSansJP/stylesheet.css";
+@import "./fonts/NotoSans/stylesheet.css";
 @import "./fonts/NunitoSans/stylesheet.css";
 @import "./fonts/Quicksand/stylesheet.css";
 
@@ -24,7 +24,7 @@ h3 {
 
 html {
   background-color: #eee;
-  font-family: "NotoSansJP";
+  font-family: "Noto Sans";
   font-size: 8px;
   line-height: 1.5;
 }
