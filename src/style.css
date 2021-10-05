@@ -194,6 +194,7 @@ p {
 
 .impressions__title {
   background-color: #0000;
+  cursor: pointer;
   transition: all 0.2s ease-in-out;
   position: absolute;
   height: 100%;
