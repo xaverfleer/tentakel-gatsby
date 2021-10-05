@@ -23,9 +23,10 @@ h3 {
 }
 
 html {
+  background-color: #eee;
   font-family: "NotoSansJP";
   font-size: 8px;
-  background-color: #eee;
+  line-height: 1.5;
 }
 
 p {
