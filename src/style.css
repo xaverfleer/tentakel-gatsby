@@ -69,6 +69,7 @@ p {
 }
 
 .article-preview__author-and-date {
+  font-family: "Nunito Sans";
   font-size: 1.23607rem;
   font-weight: 300;
   margin-top: 2em;
