@@ -123,13 +123,13 @@ p {
 }
 
 .article-preview__teaser-text {
-  line-height: 1.2em;
   letter-spacing: 0.05em;
   margin-top: 1em;
 }
 
 .article-preview__title {
   margin: 0 0 0.3em;
+  line-height: 1.1;
 }
 
 .article-preview__quote-author {
