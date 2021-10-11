@@ -1,9 +1,8 @@
 import { Link } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
+import { StaticImage } from "gatsby-plugin-image";
 import "../style.css";
-
-import header from "../assets/images/header.jpg";
 
 const paths = [
   // { path: "/", label: "Die Serie" },
@@ -18,11 +17,13 @@ const Layout = ({ children, pathname = "", type }) => (
     <header className="header">
       <div className="header__in-3-words">Gesellschaft. Mensch. Meer.</div>
       <a className="layout__link" href="/">
-        <img
-          src={header}
-          className="layout__logo"
+        <StaticImage
           alt="Tentakel – Das Magazin"
-        ></img>
+          className="layout__logo"
+          href="/"
+          placeholder="tracedSVG"
+          src="../assets/images/header.jpg"
+        />
       </a>
       <nav className="main-navigation">
         {paths.map((p) => {
