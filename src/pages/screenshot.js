@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 
-import firstDraft from "../images/screenshot.jpg";
-import secondDraft from "../images/screenshot-2021-07-30.jpg";
-import thirdDraft from "../images/screenshot-2021-08-13.pdf";
-import artikelElemente from "../images/artikel-elemente.jpg";
-import zeitschriftAlle from "../images/zeitschrift-alle.jpg";
-import zeitschriftAusgabe01 from "../images/zeitschrift-ausgabe-01.pdf";
-import zeitschriftAusgaben from "../images/zeitschrift-ausgaben.jpg";
+import firstDraft from "../assets/images/screenshot.jpg";
+import secondDraft from "../assets/images/screenshot-2021-07-30.jpg";
+import thirdDraft from "../assets/images/screenshot-2021-08-13.pdf";
+import artikelElemente from "../assets/images/artikel-elemente.jpg";
+import zeitschriftAlle from "../assets/images/zeitschrift-alle.jpg";
+import zeitschriftAusgabe01 from "../assets/images/zeitschrift-ausgabe-01.pdf";
+import zeitschriftAusgaben from "../assets/images/zeitschrift-ausgaben.jpg";
 
 // markup
 const IndexPage = () => {

@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import Layout from "../components/Layout";
 
-import imgZeitschrift from "../images/Zeitschrift-Sample-Cover.png";
+import imgZeitschrift from "../assets/images/Zeitschrift-Sample-Cover.png";
 
 const IndexPage = ({ location }) => {
   return (

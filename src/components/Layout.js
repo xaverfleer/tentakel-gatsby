@@ -3,7 +3,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "../style.css";
 
-import header from "../images/header.jpg";
+import header from "../assets/images/header.jpg";
 
 const paths = [
   // { path: "/", label: "Die Serie" },

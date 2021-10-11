@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 
-import imgSidebar from "../images/sidebar-screenshot.png";
+import imgSidebar from "../assets/images/sidebar-screenshot.png";
 
 import ArticlePreview from "../components/ArticlePreview";
 import ArticlePreviewSmall from "../components/ArticlePreviewSmall";
