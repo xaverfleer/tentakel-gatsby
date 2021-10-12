@@ -1,10 +1,13 @@
 import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const ArticlePreview = ({
+  alt,
   authorAndDate,
   category,
   imgDescription,
   pic,
+  pict,
   quote,
   quoteAuthor,
   slug,
@@ -18,17 +21,22 @@ const ArticlePreview = ({
       </div>
       {title && <h2 className="article-preview__title">{title}</h2>}
       {quote && <h2 className="article-preview__quote">{quote}</h2>}
+      {pict && (
+        <GatsbyImage
+          className="article-preview__img article-preview__img--small"
+          image={getImage(pict)}
+          alt={alt}
+        />
+      )}
       {pic && (
-        <>
-          <img
-            className="article-preview__img article-preview__img--small"
-            src={pic}
-            alt="TODO"
-          ></img>
-          <div className="article-preview__img-description">
-            {imgDescription}
-          </div>
-        </>
+        <img
+          className="article-preview__img article-preview__img--small"
+          src={pic}
+          alt={alt}
+        ></img>
+      )}
+      {imgDescription && (
+        <div className="article-preview__img-description">{imgDescription}</div>
       )}
       {teaserText && (
         <div className="article-preview__teaser-text">{teaserText}</div>

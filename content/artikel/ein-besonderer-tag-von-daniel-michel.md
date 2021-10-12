@@ -6,7 +6,7 @@ title: «Das Buch jagte mich durch die Nacht»
 teaser: "Daniel Michel ist heute 44 Jahre alt, Physiker und Unternehmer – das
   Wissen dazu fiel auf ihn herunter. "
 datetime: 2021-10-07T13:00:39.975Z
-pic: uploads/daniel-michel.jpg
+pict: ../../static/uploads/daniel-michel.jpg
 author: Camilla Landbø
 ---
 

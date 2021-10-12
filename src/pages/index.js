@@ -63,6 +63,7 @@ const IndexPage = ({ data, location }) => {
                     authorAndDate={fm.authorAndDate}
                     category={fm.category}
                     pic={fm.pic}
+                    pict={fm.pict}
                     slug={fm.slug}
                     teaserText={fm.teaserText}
                     title={fm.title}
@@ -131,6 +132,11 @@ export const pageQuery = graphql`
           category
           datetime
           pic
+          pict {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, width: 301)
+            }
+          }
           title
           teaserText: teaser
         }
