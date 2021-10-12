@@ -27,11 +27,7 @@ const Article = ({ data }) => {
           <div className="article__category">{fm.category}</div>
           <h1 className="artile__title">{fm.title}</h1>
           <div className="article__teaser">{fm.teaser}</div>
-          <GatsbyImage
-            className="article-preview__img article-preview__img--small"
-            image={getImage(fm.pict)}
-            alt={fm.alt}
-          />
+          <GatsbyImage image={getImage(fm.pict)} alt={fm.alt} />
           <div
             className="article__body"
             dangerouslySetInnerHTML={{ __html: article.html }}
@@ -53,7 +49,7 @@ export const pageQuery = graphql`
         datetime
         pict {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, width: 820, height: 514)
+            gatsbyImageData(placeholder: BLURRED, width: 800, height: 514)
           }
         }
         title
