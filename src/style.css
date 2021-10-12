@@ -22,6 +22,10 @@ h3 {
   font-family: "Nunito Sans";
 }
 
+h2 {
+  font-size: 3.5rem;
+}
+
 html {
   background-color: #eee;
   font-family: "Noto Sans";
