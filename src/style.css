@@ -121,6 +121,7 @@ p {
 }
 
 .article-preview__quote {
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -138,7 +139,7 @@ p {
 }
 
 .article-preview__title {
-  margin: 0 0 0.3em;
+  margin: 0.5em 0 ;
   line-height: 1.1;
 }
 
