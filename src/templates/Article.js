@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 
@@ -26,10 +27,10 @@ const Article = ({ data }) => {
           <div className="article__category">{fm.category}</div>
           <h1 className="artile__title">{fm.title}</h1>
           <div className="article__teaser">{fm.teaser}</div>
-          <img
-            className="article__main-image"
-            src={`/${fm.pic}`}
-            alt="Jean Michel"
+          <GatsbyImage
+            className="article-preview__img article-preview__img--small"
+            image={getImage(fm.pict)}
+            alt={fm.alt}
           />
           <div
             className="article__body"
