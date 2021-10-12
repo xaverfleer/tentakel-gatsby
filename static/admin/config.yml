@@ -3,8 +3,8 @@ backend:
   branch: main
 publish_mode: editorial_workflow
 locale: de
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: static/uploads
+public_folder: /uploads
 collections:
   - name: artikel
     identifier_field: id
@@ -39,31 +39,21 @@ collections:
     folder: content/main-page/teasers
     create: true
     fields:
-      - {
-          name: "templateKey",
-          widget: "hidden",
-          default: "teaser",
-          required: false,
-        }
+      - { name: templateKey, widget: hidden, default: teaser, required: false }
       - { name: id, label: ID (eindeutig), widget: string }
-      - { name: title, label: Titel, widget: "string", required: false }
+      - { name: title, label: Titel, widget: string, required: false }
+      - { name: teaserText, label: Vorschautext, widget: text, required: false }
       - {
-          name: "teaserText",
-          label: "Vorschautext",
-          widget: "text",
-          required: false,
-        }
-      - {
-          name: "pic",
-          label: "Bild",
-          widget: "image",
+          name: pic,
+          label: Bild,
+          widget: image,
           allow_multiple: false,
           required: false,
         }
       - {
-          name: "authorAndDate",
-          label: "Autor + Datum (für Artikel)",
-          widget: "string",
+          name: authorAndDate,
+          label: Autor + Datum (für Artikel),
+          widget: string,
           required: false,
         }
       - {
@@ -72,16 +62,11 @@ collections:
           widget: string,
           required: false,
         }
+      - { name: category, label: Kategorie, widget: string, required: false }
       - {
-          name: "category",
-          label: "Kategorie",
-          widget: "string",
-          required: false,
-        }
-      - {
-          name: "show",
-          label: "Wo anzeigen",
-          widget: "select",
+          name: show,
+          label: Wo anzeigen,
+          widget: select,
           options: ["Hauptartikel", "Spalte 1", "Spalte 2", "Spalte 3"],
           required: false,
         }
