@@ -13,17 +13,31 @@ module.exports = {
     },
     {
       resolve: "gatsby-source-filesystem",
-      options: {
-        name: "markdown-files",
-        path: `${__dirname}/content/`,
-      },
+      options: { name: "markdown-files", path: `${__dirname}/content/` },
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { name: `img`, path: `${__dirname}/static/` },
+    },
     {
       resolve: "gatsby-plugin-netlify-cms",
       options: { modulePath: `${__dirname}/src/cms/cms.js` },
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
   ],
 };

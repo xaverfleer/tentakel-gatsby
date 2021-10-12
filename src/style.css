@@ -95,6 +95,7 @@ p {
   position: absolute;
   text-transform: uppercase;
   top: 0;
+  z-index: 1;
 }
 
 .article-preview__category--small {

@@ -43,11 +43,13 @@ const IndexPage = ({ data, location }) => {
           {mainTeaserFrontmatters.map((fm) => {
             return (
               <ArticlePreview
+                alt={fm.alt}
                 authorAndDate={fm.authorAndDate}
                 category={fm.category}
                 key={fm.title || fm.pic}
                 title={fm.title}
                 pic={fm.pic}
+                pict={fm.pict}
                 teaserText={fm.teaserText}
               />
             );
@@ -90,7 +92,7 @@ const IndexPage = ({ data, location }) => {
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query allTeasers {
+  query {
     allMarkdownRemark(
       filter: { frontmatter: { templateKey: { eq: "teaser" } } }
       sort: { fields: frontmatter___ordering, order: DESC }
@@ -102,6 +104,12 @@ export const pageQuery = graphql`
             category
             imgDescription
             pic
+            pict {
+              childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 820, height: 514)
+              }
+            }
+            alt
             quote
             quoteAuthor
             show
