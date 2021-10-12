@@ -198,6 +198,10 @@ p {
   flex-basis: 31%;
 }
 
+.impressions__impression:nth-of-type(3n-2):nth-last-of-type(4) {
+  flex-basis: 45%;
+}
+
 .impressions__title {
   background-color: #0000;
   cursor: pointer;
