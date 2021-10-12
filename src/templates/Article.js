@@ -47,10 +47,15 @@ export const pageQuery = graphql`
   query ($id: String!) {
     article: markdownRemark(id: { eq: $id }) {
       frontmatter {
+        alt
         author
         category
         datetime
-        pic
+        pict {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, width: 820, height: 514)
+          }
+        }
         title
         teaser
       }
