@@ -11,12 +11,10 @@ import Layout from "../components/Layout";
 import { isoDateToGermanDate } from "../modules/dataConverter";
 
 const IndexPage = ({ data, location }) => {
-  const { allMarkdownRemark } = data;
-  const { group } = allMarkdownRemark;
   const maf = data.mainArticle.frontmatter;
-  const frontmattersByColumn = group
-    .slice(1, 4)
-    .map((group) => group.nodes.map((node) => node.frontmatter));
+  const frontmattersByColumn = data.columnTeasers.group.map((group) =>
+    group.nodes.map((node) => node.frontmatter)
+  );
 
   const fullArticlePreviews = data.fullArticlePreviews.nodes.map((preview) => {
     const fm = preview.frontmatter;
@@ -107,8 +105,13 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "teaser" } } }
+    columnTeasers: allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          templateKey: { eq: "teaser" }
+          show: { regex: "/^Spalte/" }
+        }
+      }
       sort: { fields: frontmatter___ordering, order: DESC }
     ) {
       group(field: frontmatter___show) {
@@ -120,7 +123,7 @@ export const pageQuery = graphql`
             pic
             pict {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, width: 820, height: 514)
+                gatsbyImageData(placeholder: BLURRED, width: 301)
               }
             }
             alt
