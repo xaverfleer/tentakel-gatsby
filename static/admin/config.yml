@@ -24,7 +24,7 @@ collections:
       - { name: teaser, label: Anreisser, widget: string }
       - { name: datetime, label: Zeitstempel, widget: datetime }
       - {
-          name: pic,
+          name: pict,
           label: Bild,
           widget: image,
           allow_multiple: false,

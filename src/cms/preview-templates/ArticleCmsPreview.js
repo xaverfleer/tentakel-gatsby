@@ -22,11 +22,32 @@ export default function ArticlePreview({ entry }) {
           author: data.author,
           category: data.category,
           datetime: data.datetime.toISOString(),
-          pic: data.pic,
+          pict: urlToSharpStructure(data.pict),
           teaser: data.teaser,
         },
         html: htmlSanitized,
       },
     },
   });
+}
+
+function urlToSharpStructure(url) {
+  return {
+    childImageSharp: {
+      gatsbyImageData: {
+        layout: "constrained",
+        images: {
+          sources: [
+            {
+              srcSet: url.replace("../../static/", "/"),
+              type: "image/webp",
+              sizes: "(min-width: 800px) 800px, 100vw",
+            },
+          ],
+        },
+        width: 800,
+        height: 514,
+      },
+    },
+  };
 }
