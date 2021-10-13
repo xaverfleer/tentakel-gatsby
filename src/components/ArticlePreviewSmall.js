@@ -1,7 +1,7 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const ArticlePreview = ({
+const ArticlePreviewSmall = ({
   alt,
   authorAndDate,
   category,
@@ -50,4 +50,4 @@ const ArticlePreview = ({
     </a>
   </div>
 );
-export default ArticlePreview;
+export default ArticlePreviewSmall;
