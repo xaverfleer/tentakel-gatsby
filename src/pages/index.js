@@ -13,7 +13,7 @@ import { isoDateToGermanDate } from "../modules/dataConverter";
 const IndexPage = ({ data, location }) => {
   const { allMarkdownRemark } = data;
   const { group } = allMarkdownRemark;
-  const mainTeaserFrontmatters = group[0].nodes.map((node) => node.frontmatter);
+  const maf = data.mainArticle.frontmatter;
   const frontmattersByColumn = group
     .slice(1, 4)
     .map((group) => group.nodes.map((node) => node.frontmatter));
@@ -40,20 +40,14 @@ const IndexPage = ({ data, location }) => {
       </Helmet>
       <Layout pathname={location.pathname}>
         <main className="main">
-          {mainTeaserFrontmatters.map((fm) => {
-            return (
-              <ArticlePreview
-                alt={fm.alt}
-                authorAndDate={fm.authorAndDate}
-                category={fm.category}
-                key={fm.title || fm.pic}
-                title={fm.title}
-                pic={fm.pic}
-                pict={fm.pict}
-                teaserText={fm.teaserText}
-              />
-            );
-          })}
+          <ArticlePreview
+            alt={maf.alt}
+            authorAndDate={maf.authorAndDate}
+            category={maf.category}
+            title={maf.title}
+            pict={maf.pict}
+            teaserText={maf.teaserText}
+          />
           <div className="preview-columns">
             {frontmattersByColumn.map((frontmatters, i) => (
               <div key={i} className="preview-column">
@@ -94,6 +88,25 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query {
+    mainArticle: markdownRemark(
+      frontmatter: {
+        templateKey: { eq: "teaser" }
+        show: { eq: "Hauptartikel" }
+      }
+    ) {
+      frontmatter {
+        authorAndDate
+        category
+        pict {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, width: 820, height: 514)
+          }
+        }
+        alt
+        teaserText
+        title
+      }
+    }
     allMarkdownRemark(
       filter: { frontmatter: { templateKey: { eq: "teaser" } } }
       sort: { fields: frontmatter___ordering, order: DESC }
