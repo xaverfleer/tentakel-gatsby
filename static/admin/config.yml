@@ -44,7 +44,7 @@ collections:
       - { name: title, label: Titel, widget: string, required: false }
       - { name: teaserText, label: Vorschautext, widget: text, required: false }
       - {
-          name: pic,
+          name: pict,
           label: Bild,
           widget: image,
           allow_multiple: false,
@@ -94,5 +94,5 @@ collections:
       - { name: location, label: Ort, widget: string }
       - { name: event, label: Anlass, widget: string }
       - { name: date, label: Datum des Anlasses, widget: datetime }
-      - { name: pic, label: Bild, widget: image, allow_multiple: false }
+      - { name: pict, label: Bild, widget: image, allow_multiple: false }
       - { name: alt, label: Alt-Text, widget: string }

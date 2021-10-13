@@ -1,6 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 
@@ -17,8 +18,14 @@ const EindrueckePage = ({ data, location }) => {
         <main className="main">
           <div className="impressions">
             {eindruecke.map((e) => (
-              <div className="impressions__impression" key={e.pic}>
-                <img className="impressions__img" src={e.pic} alt={e.title} />
+              <div className="impressions__impression" key={e.title || e.alt}>
+                {e.pict && (
+                  <GatsbyImage
+                    className="impressions__img"
+                    image={getImage(e.pict)}
+                    alt={e.alt || e.title}
+                  />
+                )}
                 <div className="impressions__title">{e.title}</div>
               </div>
             ))}
@@ -43,7 +50,11 @@ export const pageQuery = graphql`
           title
           date
           event
-          pic
+          pict {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, width: 500, height: 250)
+            }
+          }
           location
         }
       }

@@ -51,7 +51,7 @@ const IndexPage = ({ data, location }) => {
               <div key={i} className="preview-column">
                 {frontmatters.map((fm) => (
                   <ArticlePreviewSmall
-                    key={fm.title || fm.pic || fm.quote}
+                    key={fm.title || fm.quote}
                     alt={fm.alt || fm.title}
                     authorAndDate={fm.authorAndDate}
                     category={fm.category}
@@ -121,7 +121,6 @@ export const pageQuery = graphql`
             authorAndDate
             category
             imgDescription
-            pic
             pict {
               childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 301)
@@ -148,7 +147,6 @@ export const pageQuery = graphql`
           author: author
           category
           datetime
-          pic
           pict {
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED, width: 301)
