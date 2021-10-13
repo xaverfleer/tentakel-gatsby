@@ -7,6 +7,7 @@ teaser: "Daniel Michel ist heute 44 Jahre alt, Physiker und Unternehmer – das
   Wissen dazu fiel auf ihn herunter. "
 datetime: 2021-10-07T13:00:39.975Z
 pict: ../../static/uploads/daniel-michel.jpg
+alt: Daniel Michel
 author: Camilla Landbø
 ---
 
