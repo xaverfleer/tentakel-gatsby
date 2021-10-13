@@ -52,6 +52,7 @@ const IndexPage = ({ data, location }) => {
                 {frontmatters.map((fm) => (
                   <ArticlePreviewSmall
                     key={fm.title || fm.pic || fm.quote}
+                    alt={fm.alt || fm.title}
                     authorAndDate={fm.authorAndDate}
                     category={fm.category}
                     pic={fm.pic}

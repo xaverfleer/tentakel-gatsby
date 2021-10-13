@@ -36,7 +36,7 @@ collections:
     identifier_field: id
     label: Artikelvorschauen
     label_singular: Artikelvorschau
-    folder: content/main-page/teasers
+    folder: content/teasers
     create: true
     fields:
       - { name: templateKey, widget: hidden, default: teaser, required: false }
@@ -48,6 +48,12 @@ collections:
           label: Bild,
           widget: image,
           allow_multiple: false,
+          required: false,
+        }
+      - {
+          name: alt,
+          label: Alt-Text (u.a. für Blinde),
+          widget: string,
           required: false,
         }
       - {
